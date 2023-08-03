@@ -45,22 +45,3 @@ class CustomButtons extends StatelessWidget {
           );
   }
 }
-
-// class CustomTextButton extends StatelessWidget {
-//   const CustomTextButton(
-//       {super.key, required this.customText, required this.isBold});
-//   final String customText;
-//   final bool isBold;
-
-//   @override
-//   Widget build(BuildContext context) {
-//     return TextButton(
-//       onPressed: () {},
-//       child: Text(
-//         customText,
-//         style: TextStyle(
-//             color: Colors.red, fontSize: 16, fontWeight: FontWeight.bold),
-//       ),
-//     );
-//   }
-// }

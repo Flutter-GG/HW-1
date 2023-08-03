@@ -17,10 +17,26 @@ class MainApp extends StatelessWidget {
             mainAxisAlignment: MainAxisAlignment.center,
             children: [
               Padding(
-                padding: EdgeInsets.all(8.0),
-                child:
-                    CustomButtons(customText: 'text', isElevatedButton: true),
-              )
+                  padding: EdgeInsets.all(8.0),
+                  child: Column(
+                    children: [
+                      Text(
+                        "Let's cooking",
+                        style: TextStyle(
+                            fontSize: 16,
+                            fontWeight: FontWeight.bold,
+                            color: Colors.black),
+                      ),
+                      Text(
+                        "Cooking based on the food recipes you find and the food you love",
+                        textAlign: TextAlign.center,
+                        style: TextStyle(
+                            fontSize: 13,
+                            fontWeight: FontWeight.normal,
+                            color: Colors.grey),
+                      )
+                    ],
+                  ))
             ],
           ),
         ),

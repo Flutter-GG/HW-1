@@ -10,16 +10,17 @@ class MainApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const MaterialApp(
+    return MaterialApp(
       home: Scaffold(
         body: Center(
           child: Column(
             mainAxisAlignment: MainAxisAlignment.center,
             children: [
               Padding(
-                  padding: EdgeInsets.all(8.0),
-                  child: CustomElevatedButton(
-                      customText: 'Logi11n', isBold: true)),
+                padding: EdgeInsets.all(8.0),
+                child:
+                    CustomButtons(customText: 'text', isElevatedButton: true),
+              )
             ],
           ),
         ),

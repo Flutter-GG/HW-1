@@ -10,6 +10,7 @@
    - Icon
    - Button
    - ListView or other related widgets
+3. Provide navigation between the pages.
   
 
 <img width="276" alt="1" src="https://github.com/Flutter-GG/HW-1/assets/132256369/6da9c6a1-a639-487c-a296-a8edc545d151">

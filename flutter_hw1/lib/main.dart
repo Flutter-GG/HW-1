@@ -20,7 +20,7 @@ class MainApp extends StatelessWidget {
               Padding(
                 padding: EdgeInsets.all(8.0),
                 child: Container(
-                  width: 400,
+                  width: 350,
                   height: 100,
                   decoration: BoxDecoration(
                       boxShadow: [
@@ -80,14 +80,24 @@ class MainApp extends StatelessWidget {
                             ],
                           ),
                         ),
-                        const Center(
-                          child: CustomButtons(
-                            customText: 't',
-                            customFontSize: 10,
-                            elevatedButtonWidth: 10,
-                            elevatedButtonHeight: 10,
+                        Center(
+                          child: SizedBox(
+                            width: 30,
+                            height: 30,
+                            child: ElevatedButton(
+                              onPressed: () {},
+                              style: ButtonStyle(
+                                backgroundColor:
+                                    MaterialStateProperty.all(Colors.black),
+                                foregroundColor:
+                                    MaterialStateProperty.all(Colors.white),
+                                padding:
+                                    MaterialStateProperty.all(EdgeInsets.zero),
+                              ),
+                              child: const Icon(Icons.arrow_forward, size: 20),
+                            ),
                           ),
-                        )
+                        ),
                       ],
                     ),
                   ),

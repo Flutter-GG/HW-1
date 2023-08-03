@@ -29,44 +29,42 @@ class CustomText extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    if (isText2) {
-      return Column(
-        children: [
-          Text(
-            customText1,
-            textAlign: isTextAlign,
-            style: TextStyle(
-                overflow: ifTextOverFlow,
-                fontSize: customFontSize1,
-                color: customFontColor1,
-                fontWeight: isBold1 ? FontWeight.bold : FontWeight.normal),
-          ),
-          const SizedBox(
-            height: 10,
-          ),
-          Text(
-            customText2!,
-            textAlign: isTextAlign,
-            style: TextStyle(
-                overflow: ifTextOverFlow,
-                fontSize: customFontSize2,
-                color: customFontColor2,
-                fontWeight: isBold2 ? FontWeight.bold : FontWeight.normal),
-          ),
-        ],
-      );
-    } else {
-      return Column(children: [
-        Text(
-          customText1,
-          textAlign: isTextAlign,
-          style: TextStyle(
-              overflow: ifTextOverFlow,
-              fontSize: customFontSize1,
-              color: customFontColor1,
-              fontWeight: isBold1 ? FontWeight.bold : FontWeight.normal),
-        )
-      ]);
-    }
+    return isText2
+        ? Column(
+            children: [
+              Text(
+                customText1,
+                textAlign: isTextAlign,
+                style: TextStyle(
+                    overflow: ifTextOverFlow,
+                    fontSize: customFontSize1,
+                    color: customFontColor1,
+                    fontWeight: isBold1 ? FontWeight.bold : FontWeight.normal),
+              ),
+              const SizedBox(
+                height: 10,
+              ),
+              Text(
+                customText2!,
+                textAlign: isTextAlign,
+                style: TextStyle(
+                    overflow: ifTextOverFlow,
+                    fontSize: customFontSize2,
+                    color: customFontColor2,
+                    fontWeight: isBold2 ? FontWeight.bold : FontWeight.normal),
+              ),
+            ],
+          )
+        : Column(children: [
+            Text(
+              customText1,
+              textAlign: isTextAlign,
+              style: TextStyle(
+                  overflow: ifTextOverFlow,
+                  fontSize: customFontSize1,
+                  color: customFontColor1,
+                  fontWeight: isBold1 ? FontWeight.bold : FontWeight.normal),
+            )
+          ]);
   }
 }

@@ -1,18 +1,20 @@
 import 'package:flutter/material.dart';
 
-class FieldsWidget extends StatelessWidget {
-  const FieldsWidget(
+class CustomFieldsWidget extends StatelessWidget {
+  const CustomFieldsWidget(
       {super.key,
       required this.label,
-      required this.customFintSize,
+      required this.customFontSize,
       this.isBold = false,
       required this.customHintText,
-      required this.customPrefixIcon});
+      required this.customPrefixIcon,
+      this.customSuffixIcon});
   final String label;
-  final double customFintSize;
+  final double customFontSize;
   final bool isBold;
   final String customHintText;
   final Icon customPrefixIcon;
+  final Icon? customSuffixIcon;
 
   @override
   Widget build(BuildContext context) {
@@ -24,7 +26,7 @@ class FieldsWidget extends StatelessWidget {
           label,
           textAlign: TextAlign.start,
           style: TextStyle(
-              fontSize: customFintSize,
+              fontSize: customFontSize,
               fontWeight: isBold ? FontWeight.bold : FontWeight.normal),
         ),
         SizedBox(height: 8),
@@ -32,6 +34,7 @@ class FieldsWidget extends StatelessWidget {
           decoration: InputDecoration(
             hintText: customHintText,
             prefixIcon: customPrefixIcon,
+            suffixIcon: customSuffixIcon,
             border: const OutlineInputBorder(
               borderRadius: BorderRadius.all(Radius.circular(10)),
             ),

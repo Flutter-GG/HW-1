@@ -1,17 +1,22 @@
 import 'package:flutter/material.dart';
 
 class CustomText extends StatelessWidget {
-  const CustomText(
-      {super.key,
-      this.isText2 = false,
-      required this.customText1,
-      this.customFontSize1 = 16,
-      this.customFontColor1 = Colors.black,
-      this.customText2,
-      this.customFontSize2,
-      this.customFontColor2,
-      this.isBold1 = true,
-      this.isBold2 = true});
+  const CustomText({
+    super.key,
+    this.isTextAlign = TextAlign.center,
+    this.ifTextOverFlow = TextOverflow.ellipsis,
+    this.isText2 = false,
+    required this.customText1,
+    this.customFontSize1 = 16,
+    this.customFontColor1 = Colors.black,
+    this.customText2,
+    this.customFontSize2,
+    this.customFontColor2,
+    this.isBold1 = true,
+    this.isBold2 = true,
+  });
+  final TextAlign isTextAlign;
+  final TextOverflow ifTextOverFlow;
   final bool isText2;
   final String customText1;
   final double customFontSize1;
@@ -29,7 +34,9 @@ class CustomText extends StatelessWidget {
         children: [
           Text(
             customText1,
+            textAlign: isTextAlign,
             style: TextStyle(
+                overflow: ifTextOverFlow,
                 fontSize: customFontSize1,
                 color: customFontColor1,
                 fontWeight: isBold1 ? FontWeight.bold : FontWeight.normal),
@@ -39,8 +46,9 @@ class CustomText extends StatelessWidget {
           ),
           Text(
             customText2!,
-            textAlign: TextAlign.center,
+            textAlign: isTextAlign,
             style: TextStyle(
+                overflow: ifTextOverFlow,
                 fontSize: customFontSize2,
                 color: customFontColor2,
                 fontWeight: isBold2 ? FontWeight.bold : FontWeight.normal),
@@ -51,7 +59,9 @@ class CustomText extends StatelessWidget {
       return Column(children: [
         Text(
           customText1,
+          textAlign: isTextAlign,
           style: TextStyle(
+              overflow: ifTextOverFlow,
               fontSize: customFontSize1,
               color: customFontColor1,
               fontWeight: isBold1 ? FontWeight.bold : FontWeight.normal),

@@ -5,16 +5,20 @@ class CustomButtons extends StatelessWidget {
       {super.key,
       this.bgColor = Colors.black,
       this.fgColor = Colors.white,
-      this.customFintSize = 16,
+      this.customFontSize = 16,
       this.isBold = true,
       required this.customText,
-      required this.isElevatedButton});
+      this.isElevatedButton = true,
+      required this.elevatedButtonWidth,
+      this.elevatedButtonHeight = 50});
   final Color bgColor;
   final Color fgColor;
-  final double customFintSize;
+  final double customFontSize;
   final bool isBold;
   final String customText;
   final bool isElevatedButton;
+  final double elevatedButtonWidth;
+  final double elevatedButtonHeight;
 
   @override
   Widget build(BuildContext context) {
@@ -24,14 +28,14 @@ class CustomButtons extends StatelessWidget {
                 shape: RoundedRectangleBorder(
                   borderRadius: BorderRadius.circular(12),
                 ),
-                fixedSize: Size(MediaQuery.of(context).size.width, 50),
+                fixedSize: Size(elevatedButtonWidth, elevatedButtonHeight),
                 backgroundColor: bgColor,
                 foregroundColor: fgColor),
             onPressed: () {},
             child: Text(
               customText,
               style: TextStyle(
-                  fontSize: customFintSize,
+                  fontSize: customFontSize,
                   fontWeight: isBold ? FontWeight.bold : FontWeight.normal),
             ),
           )

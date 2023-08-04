@@ -8,6 +8,7 @@ import "package:flutter_hw1/custom_widgets/texts_widget.dart";
 import "package:flutter_hw1/pages/create_account_page.dart";
 import "package:flutter_hw1/pages/login_page.dart";
 import "package:flutter_hw1/pages/main_page.dart";
+import "package:flutter_hw1/pages/search_page.dart";
 
 void main() {
   runApp(const MainApp());
@@ -19,7 +20,7 @@ class MainApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      home: LoginPage(),
+      home: SearchPage(),
     );
   }
 }

@@ -2,10 +2,10 @@ import 'package:flutter/material.dart';
 
 class CustomCategoryWidget extends StatefulWidget {
   @override
-  _CategoryWidgetState createState() => _CategoryWidgetState();
+  _CustomCategoryWidgetState createState() => _CustomCategoryWidgetState();
 }
 
-class _CategoryWidgetState extends State<CustomCategoryWidget> {
+class _CustomCategoryWidgetState extends State<CustomCategoryWidget> {
   String? _selectedOption;
 
   final List<String> _options = [

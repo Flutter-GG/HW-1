@@ -10,47 +10,75 @@ class CustomButtonsWidget extends StatelessWidget {
     this.isBold = true,
     this.isElevatedButton = true,
     this.elevatedButtonHeight = 50,
-    required this.customText,
-    required this.elevatedButtonWidth,
+    this.customText = 'test',
+    this.elevatedButtonWidth = 300,
+    this.isSizedBoxButton = false,
+    this.sizedBoxButtonWidth = 0,
+    this.sizedBoxButtonHeight = 0,
+    this.sizedBoxIcon,
   });
   final Color bgColor;
   final Color fgColor;
   final double customFontSize;
   final bool isBold;
-  final String customText;
+  final String? customText;
   final bool isElevatedButton;
-  final double elevatedButtonWidth;
+  final double? elevatedButtonWidth;
   final double elevatedButtonHeight;
+  final bool isSizedBoxButton;
+  final double sizedBoxButtonWidth;
+  final double sizedBoxButtonHeight;
+  final Icon? sizedBoxIcon;
   // final Function onPress;
 
   @override
   Widget build(BuildContext context) {
-    return isElevatedButton == true
-        ? ElevatedButton(
-            style: ElevatedButton.styleFrom(
-                shape: RoundedRectangleBorder(
-                  borderRadius: BorderRadius.circular(12),
+    if (isElevatedButton == true) {
+      return ElevatedButton(
+        style: ElevatedButton.styleFrom(
+            shape: RoundedRectangleBorder(
+              borderRadius: BorderRadius.circular(12),
+            ),
+            fixedSize: Size(elevatedButtonWidth!, elevatedButtonHeight),
+            backgroundColor: bgColor,
+            foregroundColor: fgColor),
+        onPressed: () {},
+        child: Text(
+          customText!,
+          style: TextStyle(
+              fontSize: customFontSize,
+              fontWeight: isBold ? FontWeight.bold : FontWeight.normal),
+        ),
+      );
+    } else if (isSizedBoxButton == true) {
+      return SizedBox(
+        width: sizedBoxButtonWidth,
+        height: sizedBoxButtonHeight,
+        child: ElevatedButton(
+            onPressed: () {},
+            style: ButtonStyle(
+              shape: MaterialStateProperty.all<RoundedRectangleBorder>(
+                RoundedRectangleBorder(
+                  borderRadius: BorderRadius.circular(10),
                 ),
-                fixedSize: Size(elevatedButtonWidth, elevatedButtonHeight),
-                backgroundColor: bgColor,
-                foregroundColor: fgColor),
-            onPressed: () {},
-            child: Text(
-              customText,
-              style: TextStyle(
-                  fontSize: customFontSize,
-                  fontWeight: isBold ? FontWeight.bold : FontWeight.normal),
+              ),
+              backgroundColor: MaterialStateProperty.all(Colors.black),
+              foregroundColor: MaterialStateProperty.all(Colors.white),
+              padding: MaterialStateProperty.all(EdgeInsets.zero),
             ),
-          )
-        : TextButton(
-            onPressed: () {},
-            child: Text(
-              customText,
-              style: TextStyle(
-                  color: fgColor,
-                  fontSize: customFontSize,
-                  fontWeight: isBold ? FontWeight.bold : FontWeight.normal),
-            ),
-          );
+            child: sizedBoxIcon),
+      );
+    } else {
+      return TextButton(
+        onPressed: () {},
+        child: Text(
+          customText!,
+          style: TextStyle(
+              color: fgColor,
+              fontSize: customFontSize,
+              fontWeight: isBold ? FontWeight.bold : FontWeight.normal),
+        ),
+      );
+    }
   }
 }

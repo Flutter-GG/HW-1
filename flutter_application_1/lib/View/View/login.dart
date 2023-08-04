@@ -47,7 +47,7 @@ class login extends StatelessWidget {
           NavigationButton(
             title: "Login",
             TextcolorButton: Colors.white,
-            colorButton: Colors.black,
+            colorButton: Color(0xff042627),
           ),
           SizedBox(
             height: 20,
@@ -72,7 +72,7 @@ class login extends StatelessWidget {
           NavigationButton(
             title: "Sign Up",
             TextcolorButton: Colors.white,
-            colorButton: Colors.black,
+            colorButton: Color(0xff042627),
           ),
         ],
       ),

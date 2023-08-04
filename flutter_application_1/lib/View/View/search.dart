@@ -18,7 +18,7 @@ class search extends StatelessWidget {
         elevation: 0,
         title: const Text(
           "Search",
-          style: TextStyle(color: Colors.black),
+          style: TextStyle(color: Colors.black, fontWeight: FontWeight.bold),
         ),
       ),
       body: Padding(
@@ -48,7 +48,7 @@ class search extends StatelessWidget {
                     width: 50,
                     height: 50,
                     radius: 10,
-                    abc: Icons.abc,
+                    iconsearch: Icons.add_task,
                   ),
                 ),
               ],
@@ -58,29 +58,34 @@ class search extends StatelessWidget {
               child: Row(
                 children: [
                   buttonNavigate(
-                      width: 140,
-                      height: 55,
-                      color: Colors.black,
-                      radius: 80,
-                      title: 'Breackfast'),
-                  SizedBox(
-                    width: 10,
+                    width: 140,
+                    height: 55,
+                    color: Color(0xff80b6bd),
+                    radius: 80,
+                    title: 'Breackfast',
+                    textcolor: Colors.white,
                   ),
-                  buttonNavigate(
-                      width: 120,
-                      height: 55,
-                      color: Colors.black,
-                      radius: 80,
-                      title: "Launch"),
                   SizedBox(
                     width: 10,
                   ),
                   buttonNavigate(
                     width: 120,
                     height: 55,
-                    color: Colors.black,
+                    color: Color(0xfff1f5f5),
+                    radius: 80,
+                    title: "Launch",
+                    textcolor: Colors.black,
+                  ),
+                  SizedBox(
+                    width: 10,
+                  ),
+                  buttonNavigate(
+                    width: 120,
+                    height: 55,
+                    color: Color(0xfff1f5f5),
                     radius: 80,
                     title: "Dinner",
+                    textcolor: Colors.black,
                   ),
                 ],
               ),
@@ -95,6 +100,7 @@ class search extends StatelessWidget {
               fontWeight: FontWeight.bold,
               size1: 20,
               size2: 15,
+              color1: Color(0xff80b6bd),
             ),
             const SizedBox(
               height: 20,
@@ -158,12 +164,14 @@ class search extends StatelessWidget {
               height: 30,
             ),
             const texttittle(
-                title: "Editors Choice",
-                decrb: "View All",
-                width: 170,
-                fontWeight: FontWeight.bold,
-                size1: 20,
-                size2: 15),
+              title: "Editors Choice",
+              decrb: "View All",
+              width: 170,
+              fontWeight: FontWeight.bold,
+              size1: 20,
+              size2: 15,
+              color1: Color(0xff80b6bd),
+            ),
             const SizedBox(
               height: 20,
             ),
@@ -185,7 +193,7 @@ class search extends StatelessWidget {
               personName: "Kamal Yalderiz",
             ),
             FloatingActionButton(
-              child: Icon(Icons.ice_skating),
+              child: Icon(Icons.cake),
               backgroundColor: Colors.black,
               onPressed: () {
                 showModalBottomSheet(

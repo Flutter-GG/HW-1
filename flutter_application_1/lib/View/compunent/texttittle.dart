@@ -8,7 +8,7 @@ class texttittle extends StatelessWidget {
     required this.width,
     required this.fontWeight,
     required this.size1,
-    required this.size2,
+    required this.size2, required this.color1,
   });
   final String title;
   final String decrb;
@@ -16,6 +16,7 @@ class texttittle extends StatelessWidget {
   final FontWeight fontWeight;
   final double size1;
   final double size2;
+  final Color color1;
   @override
   Widget build(BuildContext context) {
     return Row(
@@ -30,7 +31,7 @@ class texttittle extends StatelessWidget {
         ),
         Text(
           decrb,
-          style: TextStyle(fontSize: size2, fontWeight: fontWeight),
+          style: TextStyle(fontSize: size2, fontWeight: fontWeight,color: color1),
         )
       ],
     );

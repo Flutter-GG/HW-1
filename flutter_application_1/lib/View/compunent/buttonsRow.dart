@@ -6,7 +6,6 @@ class buttonsRow extends StatelessWidget {
     super.key,
   });
 
-  
   @override
   Widget build(BuildContext context) {
     return const Row(
@@ -16,9 +15,10 @@ class buttonsRow extends StatelessWidget {
           child: buttonNavigate(
             width: 140,
             height: 55,
-            color: Colors.black,
+            color: Color(0xff80b6bd),
             title: "Breakfast",
             radius: 80,
+            textcolor: Colors.white,
           ),
         ),
         SizedBox(
@@ -27,9 +27,10 @@ class buttonsRow extends StatelessWidget {
         buttonNavigate(
           width: 120,
           height: 55,
-          color: Colors.black,
+          color: Color(0xfff1f5f5),
           title: "Launch",
           radius: 80,
+          textcolor: Colors.black,
         ),
         SizedBox(
           width: 10,
@@ -37,9 +38,10 @@ class buttonsRow extends StatelessWidget {
         buttonNavigate(
           width: 120,
           height: 55,
-          color: Colors.black,
+          color: Color(0xfff1f5f5),
           title: "Dinner",
           radius: 80,
+          textcolor: Color(0xff80b6bd),
         ),
       ],
     );

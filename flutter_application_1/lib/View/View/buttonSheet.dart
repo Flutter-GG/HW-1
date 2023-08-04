@@ -45,9 +45,8 @@ class Buttonsheet extends StatelessWidget {
             ),
             NavigationButton(
               title: "Apply Filter",
-              colorButton: Colors.black,
+              colorButton: Color(0xff80b6bd),
               TextcolorButton: Colors.white,
-              
             ),
             SizedBox(
               height: 10,
@@ -55,7 +54,7 @@ class Buttonsheet extends StatelessWidget {
             NavigationButton(
               title: "clear filter",
               colorButton: Colors.white,
-              TextcolorButton: Colors.black,
+              TextcolorButton: Color(0xff80b6bd),
             )
           ],
         ),

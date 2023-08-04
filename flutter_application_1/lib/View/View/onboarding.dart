@@ -50,7 +50,7 @@ class onboarding extends StatelessWidget {
                   NavigationButton(
                     title: "Get Started",
                     TextcolorButton: Colors.white,
-                    colorButton: Colors.black,
+                    colorButton: Color(0xff042627),
                   )
                 ],
               ),

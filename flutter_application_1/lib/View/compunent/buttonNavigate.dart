@@ -7,13 +7,14 @@ class buttonNavigate extends StatelessWidget {
     required this.height,
     required this.color,
     required this.radius,
-    required this.title,
+    required this.title, required this.textcolor,
   });
   final double width;
   final double height;
   final Color color;
   final double radius;
   final String title;
+  final Color textcolor;
   @override
   Widget build(BuildContext context) {
     return SizedBox(
@@ -28,7 +29,7 @@ class buttonNavigate extends StatelessWidget {
             fixedSize: Size(MediaQuery.of(context).size.width - 50, 50),
             shape: RoundedRectangleBorder(
                 borderRadius: BorderRadius.circular(radius))),
-        child: Text(title),
+        child: Text(title,style: TextStyle(color: textcolor),),
       ),
     );
   }

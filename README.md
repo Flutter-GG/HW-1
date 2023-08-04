@@ -1,42 +1,149 @@
-# HW-1
-## Details:
-1. Implement this design in an app using Flutter.
-2. You must utilize the following widgets:
-   - Image
-   - AppBar
-   - TextField
-   - Row
-   - Column
-   - Icon
-   - Button
-   - ListView or other related widgets
-3. Provide navigation between the pages.
-  
 
-<img width="276" alt="1" src="https://github.com/Flutter-GG/HW-1/assets/132256369/6da9c6a1-a639-487c-a296-a8edc545d151">
-<img width="276" alt="2" src="https://github.com/Flutter-GG/HW-1/assets/132256369/bd7fc565-f1a0-4cde-919b-78636d4964b7">
-<img width="276" alt="3" src="https://github.com/Flutter-GG/HW-1/assets/132256369/7c9382c4-3657-4083-aa02-ef867d4a12e8">
-<img width="276" alt="4" src="https://github.com/Flutter-GG/HW-1/assets/132256369/cbc28a9d-e727-4fba-ac5d-26894b384b94">
-<img width="276" alt="5" src="https://github.com/Flutter-GG/HW-1/assets/132256369/5ef2f17c-02b7-49d2-a4ee-161de709d218">
+# Home Work 1
 
-## Delivery Requirements:
-1. **Project Structure:** Create a new Flutter project and organize its structure appropriately. Set up the necessary folders, files, and ensure a clean and organized project layout.
-2. **Clean Code**: Write clear and well-organized code. Use meaningful variable and function names, Well-structured and easily maintainable code.
-
-## Bonus:
-1. The filter button displays a collection of buttons that can be selected and unselected.
-2. In password TextField, implement the functionality to show/hide the password using an eye icon.
-
-## Submission:
-1. Flutter Project:
-   - Submit the complete Flutter project folder, including all necessary files (screens and components).
-2. Screenshots of your app.
-3. GitHub Submission:
-   - Create a Fork from the project’s GitHub repository.
-   - Create a new branch with your name.
-   - Commit frequently with descriptive messages to show your progress.
-   - Finally, create a Pull Request to the project’s original repository.
+The Weeknd project, which provides for the design of four facades in consistency and as required
 
 
-## Deadline: 
-06/08/2023  9:59 AM
+![Logo](https://docs.flutter.dev/assets/images/flutter-logo-sharing.png)
+
+
+## Features
+
+- Navigation page
+- Filters
+- Fullscreen mode
+
+
+## widgets
+
+- Image
+
+- AppBar
+- TextField
+- Row
+- Column
+- Icon
+- Button
+- Expanded
+- Container
+- SizedBox
+- Text 
+
+
+## Color Reference
+
+| Color             | Hex                                                                |
+| ----------------- | ------------------------------------------------------------------ |
+| Background color | ![#70b9be](https://via.placeholder.com/10/0a192f?text=+) #70b9be |
+| Buttons color | ![#042628](https://via.placeholder.com/10/f8f8f8?text=+) #042628 |
+
+
+
+
+## Git And Github
+
+
+Git status for Check on the status of the files
+```bash
+git status
+```
+
+Git clone for clone the project fork 
+
+```bash
+git clone https://////
+```
+
+Git add for save changes folders 
+
+```bash
+git add .
+```
+
+Git commit for save changes and tybe massege 
+
+```bash
+git coomit -m "commit massege"
+```
+Git branch for save all commits in new branch 
+
+```branch 
+git checkout -b branch name
+```
+
+Git push for send all changes to the Github 
+
+```bash
+git push --set-upstream origin branch Name
+```
+
+## coumpunent/Examples
+
+```dart
+class imageContainer extends StatelessWidget {
+  const imageContainer({
+    super.key,
+    required this.width,
+    required this.height,
+    required this.borderRadius,
+    required this.shadowColor,
+    required this.opacity,
+    required this.paddingImage,
+    required this.widthImage,
+    required this.heightImage,
+    required this.borderRadiusImage,
+    required this.titleFood,
+    required this.containerColor,
+    required this.assetsName,
+  });
+  final double width;
+  final double height;
+  final double borderRadius;
+  final Color shadowColor;
+  final double opacity;
+  final double paddingImage;
+  final double widthImage;
+  final double heightImage;
+  final double borderRadiusImage;
+  final String titleFood;
+  final Color containerColor;
+  final String assetsName;
+  @override
+  Widget build(BuildContext context) {
+    return Container(
+      width: width,
+      height: height,
+      decoration: BoxDecoration(
+        borderRadius: BorderRadius.circular(borderRadius),
+        color: containerColor,
+        boxShadow: [
+          BoxShadow(
+            color: shadowColor.withOpacity(opacity),
+            spreadRadius: 0.1,
+            blurRadius: 7,
+            offset: Offset(1, 1), // changes position of shadow
+          ),
+        ],
+      ),
+      child: Column(children: [
+        Padding(
+          padding: EdgeInsets.all(paddingImage),
+          child: Container(
+            width: widthImage,
+            height: heightImage,
+            decoration: BoxDecoration(
+                borderRadius: BorderRadius.circular(borderRadiusImage),
+                image: DecorationImage(
+                    image: AssetImage(assetsName), fit: BoxFit.cover)),
+          ),
+        ),
+        Text(
+          titleFood,
+          style: TextStyle(fontWeight: FontWeight.bold),
+        )
+      ]),
+    );
+  }
+}
+```
+

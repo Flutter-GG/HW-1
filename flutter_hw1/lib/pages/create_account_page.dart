@@ -5,7 +5,6 @@ import 'package:flutter_hw1/custom_widgets/fields_widget.dart';
 import 'package:flutter_hw1/custom_widgets/texts_widget.dart';
 import 'package:flutter_hw1/pages/search_page.dart';
 import 'package:flutter_hw1/pages/working_on_it_page.dart';
-// import 'package:flutter_hw1/pages/main_page.dart';
 
 class CreateAccount extends StatelessWidget {
   const CreateAccount({super.key});
@@ -30,7 +29,6 @@ class CreateAccount extends StatelessWidget {
                 child: Padding(
                   padding: EdgeInsets.symmetric(horizontal: 30.0),
                   child: Column(
-                    // mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                     children: [
                       const CustomFieldsWidget(
                           label: 'Username',

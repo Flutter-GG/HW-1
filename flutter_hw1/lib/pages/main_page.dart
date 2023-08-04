@@ -3,7 +3,6 @@ import 'package:flutter_hw1/custom_widgets/buttons_widget.dart';
 import 'package:flutter_hw1/custom_widgets/texts_widget.dart';
 import 'package:flutter_hw1/pages/create_account_page.dart';
 import 'package:flutter_hw1/pages/login_page.dart';
-// import 'package:flutter_hw1/pages/create_account_page.dart';
 
 class MainPage extends StatelessWidget {
   const MainPage({super.key});

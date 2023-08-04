@@ -6,9 +6,7 @@ import 'package:flutter_hw1/custom_widgets/custom_editor_choice_widget.dart';
 import 'package:flutter_hw1/custom_widgets/fields_widget.dart';
 import 'package:flutter_hw1/custom_widgets/texts_widget.dart';
 import 'package:flutter_hw1/pages/filters_page.dart';
-// import 'package:flutter_hw1/pages/login_page.dart';
 import 'package:flutter_hw1/pages/working_on_it_page.dart';
-
 import '../custom_widgets/custom_popular_recipes_card_widget.dart';
 
 class SearchPage extends StatelessWidget {

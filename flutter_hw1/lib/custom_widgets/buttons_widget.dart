@@ -30,8 +30,7 @@ class CustomButtonsWidget extends StatelessWidget {
   final double sizedBoxButtonWidth;
   final double sizedBoxButtonHeight;
   final Icon? sizedBoxIcon;
-  final Function()? onPress; //any function need (), it is sucks
-
+  final Function()? onPress;
   @override
   Widget build(BuildContext context) {
     if (isElevatedButton == true) {

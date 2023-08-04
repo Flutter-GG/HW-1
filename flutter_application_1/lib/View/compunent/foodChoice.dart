@@ -20,7 +20,7 @@ class foodChoice extends StatelessWidget {
       decoration: BoxDecoration(
         borderRadius: BorderRadius.circular(10),
         color: Colors.white,
-        boxShadow: [
+        boxShadow: const [
           BoxShadow(
             color: Colors.grey,
             spreadRadius: 0.1,
@@ -51,13 +51,13 @@ class foodChoice extends StatelessWidget {
                     children: [
                       Text(
                         foodDiscribction,
-                        style: TextStyle(
+                        style: const TextStyle(
                           fontSize: 20,
                           fontWeight: FontWeight.bold,
                         ),
                         maxLines: 2,
                       ),
-                      SizedBox(
+                      const SizedBox(
                         width: 30,
                       ),
                       Padding(
@@ -69,7 +69,7 @@ class foodChoice extends StatelessWidget {
                               child: InkWell(
                                 splashColor: Colors.white,
                                 onTap: () {},
-                                child: Column(
+                                child: const Column(
                                   mainAxisAlignment: MainAxisAlignment.center,
                                   children: <Widget>[
                                     Icon(
@@ -97,7 +97,7 @@ class foodChoice extends StatelessWidget {
                             //  alignment: Alignment.center,
                           ),
                         ),
-                        SizedBox(
+                        const SizedBox(
                           width: 10,
                         ),
                         Text(personName)

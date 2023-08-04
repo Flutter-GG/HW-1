@@ -28,7 +28,7 @@ class onboarding extends StatelessWidget {
                 borderRadius: BorderRadius.circular(30),
                 color: Colors.white,
               ),
-              child: Column(
+              child: const Column(
                 children: [
                   SizedBox(
                     height: 50,

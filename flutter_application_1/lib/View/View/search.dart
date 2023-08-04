@@ -25,7 +25,7 @@ class search extends StatelessWidget {
         padding: EdgeInsets.all(8.0),
         child: Column(
           children: [
-            Row(
+            const Row(
               crossAxisAlignment: CrossAxisAlignment.start,
               //padding: EdgeInsets.all(30.0),
               children: [
@@ -53,7 +53,7 @@ class search extends StatelessWidget {
                 ),
               ],
             ),
-            SingleChildScrollView(
+            const SingleChildScrollView(
               scrollDirection: Axis.horizontal,
               child: Row(
                 children: [
@@ -85,10 +85,10 @@ class search extends StatelessWidget {
                 ],
               ),
             ),
-            SizedBox(
+            const SizedBox(
               height: 30,
             ),
-            texttittle(
+            const texttittle(
               title: "Popular Recipes",
               decrb: "View All",
               width: 150,
@@ -96,10 +96,10 @@ class search extends StatelessWidget {
               size1: 20,
               size2: 15,
             ),
-            SizedBox(
+            const SizedBox(
               height: 20,
             ),
-            Row(
+            const Row(
               children: [
                 imageContainer(
                   assetsName:
@@ -154,30 +154,30 @@ class search extends StatelessWidget {
                 )
               ],
             ),
-            SizedBox(
+            const SizedBox(
               height: 30,
             ),
-            texttittle(
+            const texttittle(
                 title: "Editors Choice",
                 decrb: "View All",
                 width: 170,
                 fontWeight: FontWeight.bold,
                 size1: 20,
                 size2: 15),
-            SizedBox(
+            const SizedBox(
               height: 20,
             ),
-            foodChoice(
+            const foodChoice(
               imagePath: "assets/image/Baked Stuffed Lobster with Shrimp.jpg",
               foodDiscribction: "Eating lobester \nvery nice",
               person:
                   "assets/image/Peaky blinders, Thomas Shelby, cap, HD mobile wallpaper | Peaky blinders tommy shelby, Peaky blinders wallpaper, Peaky blinders thomas.jpg",
               personName: "Thomas Shelpy",
             ),
-            SizedBox(
+            const SizedBox(
               height: 20,
             ),
-            foodChoice(
+            const foodChoice(
               imagePath:
                   "assets/image/Blue Crab - Steamed Blue Crabs with Old Bay - Rasa Malaysia.jpg",
               foodDiscribction: "Eating crab \nvery nice youme",
@@ -190,7 +190,7 @@ class search extends StatelessWidget {
               onPressed: () {
                 showModalBottomSheet(
                     isScrollControlled: false,
-                    shape: RoundedRectangleBorder(
+                    shape: const RoundedRectangleBorder(
                         borderRadius:
                             BorderRadius.vertical(top: Radius.circular(30))),
                     context: context,

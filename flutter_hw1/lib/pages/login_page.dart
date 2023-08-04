@@ -3,6 +3,9 @@ import 'package:flutter_hw1/custom_widgets/app_bar_widget.dart';
 import 'package:flutter_hw1/custom_widgets/buttons_widget.dart';
 import 'package:flutter_hw1/custom_widgets/fields_widget.dart';
 import 'package:flutter_hw1/custom_widgets/texts_widget.dart';
+import 'package:flutter_hw1/pages/create_account_page.dart';
+import 'package:flutter_hw1/pages/search_page.dart';
+import 'package:flutter_hw1/pages/working_on_it_page.dart';
 // import 'package:flutter_hw1/pages/main_page.dart';
 
 class LoginPage extends StatelessWidget {
@@ -50,6 +53,14 @@ class LoginPage extends StatelessWidget {
                         height: 20,
                       ),
                       CustomButtonsWidget(
+                          onPress: () {
+                            Navigator.push(
+                              context,
+                              MaterialPageRoute(
+                                builder: (context) => const SearchPage(),
+                              ),
+                            );
+                          },
                           customText: "Login",
                           elevatedButtonWidth:
                               MediaQuery.of(context).size.width),
@@ -57,6 +68,14 @@ class LoginPage extends StatelessWidget {
                         height: 20,
                       ),
                       CustomButtonsWidget(
+                          onPress: () {
+                            Navigator.push(
+                              context,
+                              MaterialPageRoute(
+                                builder: (context) => const WorkingOnIt(),
+                              ),
+                            );
+                          },
                           fgColor: Colors.black,
                           customFontSize: 14,
                           isElevatedButton: false,
@@ -75,6 +94,14 @@ class LoginPage extends StatelessWidget {
                         height: 20,
                       ),
                       CustomButtonsWidget(
+                          onPress: () {
+                            Navigator.push(
+                              context,
+                              MaterialPageRoute(
+                                builder: (context) => const CreateAccount(),
+                              ),
+                            );
+                          },
                           customFontSize: 14,
                           customText: 'Sign Up',
                           elevatedButtonWidth:

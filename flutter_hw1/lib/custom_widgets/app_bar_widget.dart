@@ -10,6 +10,15 @@ class CustomAppBarWidget extends StatelessWidget
     return AppBar(
       backgroundColor: Colors.white,
       elevation: 0,
+      leading: IconButton(
+        icon: const Icon(
+          Icons.arrow_back,
+          color: Colors.black,
+        ),
+        onPressed: () {
+          Navigator.pop(context);
+        },
+      ),
       title: CustomTextWidget(
         customText1: page,
         customFontSize1: 23,

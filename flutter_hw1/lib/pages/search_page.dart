@@ -5,25 +5,64 @@ import 'package:flutter_hw1/custom_widgets/category_widget.dart';
 import 'package:flutter_hw1/custom_widgets/custom_editor_choice_widget.dart';
 import 'package:flutter_hw1/custom_widgets/fields_widget.dart';
 import 'package:flutter_hw1/custom_widgets/texts_widget.dart';
+import 'package:flutter_hw1/pages/filters_page.dart';
+// import 'package:flutter_hw1/pages/login_page.dart';
+import 'package:flutter_hw1/pages/working_on_it_page.dart';
 
 import '../custom_widgets/custom_popular_recipes_card_widget.dart';
 
 class SearchPage extends StatelessWidget {
   const SearchPage({super.key});
+  void _showBottomSheet(BuildContext context) {
+    showModalBottomSheet(
+      context: context,
+      backgroundColor: Colors.transparent,
+      builder: (BuildContext context) {
+        return const BottomSheetContent();
+      },
+    );
+  }
 
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       backgroundColor: Colors.white,
       appBar: const CustomAppBarWidget(page: 'Search'),
+      bottomNavigationBar: BottomNavigationBar(
+        fixedColor: Colors.black,
+        unselectedItemColor: Colors.grey,
+        currentIndex: 0,
+        onTap: (int index) {
+          if (index == 0) {
+          } else if (index == 1) {}
+        },
+        items: const [
+          BottomNavigationBarItem(
+            icon: Icon(Icons.home),
+            label: '',
+          ),
+          BottomNavigationBarItem(
+            icon: Icon(Icons.search),
+            label: '',
+          ),
+          BottomNavigationBarItem(
+            icon: Icon(Icons.notifications),
+            label: '',
+          ),
+          BottomNavigationBarItem(
+            icon: Icon(Icons.person),
+            label: '',
+          ),
+        ],
+      ),
       body: Padding(
         padding: const EdgeInsets.symmetric(horizontal: 20.0),
         child: Column(
-          // mainAxisAlignment: MainAxisAlignment.center,
           children: [
-            const Row(
+            Row(
+              crossAxisAlignment: CrossAxisAlignment.end,
               children: [
-                Expanded(
+                const Expanded(
                   flex: 5,
                   child: CustomFieldsWidget(
                     label: 'Search',
@@ -32,13 +71,16 @@ class SearchPage extends StatelessWidget {
                     customPrefixIcon: Icon(Icons.search),
                   ),
                 ),
-                SizedBox(width: 10),
+                const SizedBox(width: 10),
                 Expanded(
                   child: CustomButtonsWidget(
+                    onPress: () {
+                      _showBottomSheet(context);
+                    },
                     isElevatedButton: false,
                     isSizedBoxButton: true,
-                    sizedBoxButtonHeight: 50,
-                    sizedBoxIcon: Icon(
+                    sizedBoxButtonHeight: 60,
+                    sizedBoxIcon: const Icon(
                       Icons.connect_without_contact_outlined,
                       size: 15,
                     ),
@@ -48,20 +90,28 @@ class SearchPage extends StatelessWidget {
             ),
             const SizedBox(height: 20),
             CustomCategoryWidget(),
-            const Row(
+            Row(
               mainAxisAlignment: MainAxisAlignment.center,
               children: [
-                CustomTextWidget(customText1: 'Popular Recipes'),
-                SizedBox(width: 185),
+                const CustomTextWidget(customText1: 'Popular Recipes'),
+                const SizedBox(width: 185),
                 CustomButtonsWidget(
+                  onPress: () {
+                    Navigator.push(
+                      context,
+                      MaterialPageRoute(
+                        builder: (context) => const WorkingOnIt(),
+                      ),
+                    );
+                  },
                   isElevatedButton: false,
                   customText: 'View All',
                   customFontSize: 13,
-                  fgColor: Color(0xff6FB9BE),
+                  fgColor: const Color(0xff6FB9BE),
                 ),
               ],
             ),
-            SingleChildScrollView(
+            const SingleChildScrollView(
               scrollDirection: Axis.horizontal,
               child: Row(
                 children: [
@@ -81,16 +131,24 @@ class SearchPage extends StatelessWidget {
               ),
             ),
             const SizedBox(height: 20),
-            const Row(
+            Row(
               mainAxisAlignment: MainAxisAlignment.center,
               children: [
-                CustomTextWidget(customText1: "Editor's Choice"),
-                SizedBox(width: 185),
+                const CustomTextWidget(customText1: "Editor's Choice"),
+                const SizedBox(width: 185),
                 CustomButtonsWidget(
+                  onPress: () {
+                    Navigator.push(
+                      context,
+                      MaterialPageRoute(
+                        builder: (context) => const WorkingOnIt(),
+                      ),
+                    );
+                  },
                   isElevatedButton: false,
                   customText: 'View All',
                   customFontSize: 13,
-                  fgColor: Color(0xff6FB9BE),
+                  fgColor: const Color(0xff6FB9BE),
                 ),
               ],
             ),
@@ -99,6 +157,14 @@ class SearchPage extends StatelessWidget {
                 child: Column(
                   children: [
                     CustomEditorChoiceWidget(
+                      onPress: () {
+                        Navigator.push(
+                          context,
+                          MaterialPageRoute(
+                            builder: (context) => const WorkingOnIt(),
+                          ),
+                        );
+                      },
                       mainMealName: 'bidza',
                       profileName: 'Mohammed Alsahli',
                       mainImageAsset: 'assets/images/food_images/food6.jpg',
@@ -107,6 +173,14 @@ class SearchPage extends StatelessWidget {
                       containerWidth: MediaQuery.of(context).size.width,
                     ),
                     CustomEditorChoiceWidget(
+                      onPress: () {
+                        Navigator.push(
+                          context,
+                          MaterialPageRoute(
+                            builder: (context) => const WorkingOnIt(),
+                          ),
+                        );
+                      },
                       mainMealName: 'salad',
                       profileName: 'another person',
                       mainImageAsset: 'assets/images/food_images/food5.jpg',
@@ -115,6 +189,14 @@ class SearchPage extends StatelessWidget {
                       containerWidth: MediaQuery.of(context).size.width,
                     ),
                     CustomEditorChoiceWidget(
+                      onPress: () {
+                        Navigator.push(
+                          context,
+                          MaterialPageRoute(
+                            builder: (context) => const WorkingOnIt(),
+                          ),
+                        );
+                      },
                       mainMealName: 'Pancake',
                       profileName: 'person3',
                       mainImageAsset: 'assets/images/food_images/food4.jpg',
@@ -123,6 +205,14 @@ class SearchPage extends StatelessWidget {
                       containerWidth: MediaQuery.of(context).size.width,
                     ),
                     CustomEditorChoiceWidget(
+                      onPress: () {
+                        Navigator.push(
+                          context,
+                          MaterialPageRoute(
+                            builder: (context) => const WorkingOnIt(),
+                          ),
+                        );
+                      },
                       mainMealName: 'للحين ما ادري وش ذا',
                       profileName: 'محمد سعود السهلي',
                       mainImageAsset: 'assets/images/food_images/food3.jpg',
@@ -131,6 +221,14 @@ class SearchPage extends StatelessWidget {
                       containerWidth: MediaQuery.of(context).size.width,
                     ),
                     CustomEditorChoiceWidget(
+                      onPress: () {
+                        Navigator.push(
+                          context,
+                          MaterialPageRoute(
+                            builder: (context) => const WorkingOnIt(),
+                          ),
+                        );
+                      },
                       mainMealName: 'Another Salad',
                       profileName: 'F',
                       mainImageAsset: 'assets/images/food_images/food9.jpg',
@@ -139,6 +237,14 @@ class SearchPage extends StatelessWidget {
                       containerWidth: MediaQuery.of(context).size.width,
                     ),
                     CustomEditorChoiceWidget(
+                      onPress: () {
+                        Navigator.push(
+                          context,
+                          MaterialPageRoute(
+                            builder: (context) => const WorkingOnIt(),
+                          ),
+                        );
+                      },
                       mainMealName: 'كيكة',
                       profileName: 'Mohammed Alsahli',
                       mainImageAsset: 'assets/images/food_images/food7.jpg',

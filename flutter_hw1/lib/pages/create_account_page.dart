@@ -3,6 +3,8 @@ import 'package:flutter_hw1/custom_widgets/app_bar_widget.dart';
 import 'package:flutter_hw1/custom_widgets/buttons_widget.dart';
 import 'package:flutter_hw1/custom_widgets/fields_widget.dart';
 import 'package:flutter_hw1/custom_widgets/texts_widget.dart';
+import 'package:flutter_hw1/pages/search_page.dart';
+import 'package:flutter_hw1/pages/working_on_it_page.dart';
 // import 'package:flutter_hw1/pages/main_page.dart';
 
 class CreateAccount extends StatelessWidget {
@@ -88,6 +90,14 @@ class CreateAccount extends StatelessWidget {
                         height: 20,
                       ),
                       CustomButtonsWidget(
+                          onPress: () {
+                            Navigator.push(
+                              context,
+                              MaterialPageRoute(
+                                builder: (context) => const SearchPage(),
+                              ),
+                            );
+                          },
                           customText: "Continue",
                           elevatedButtonWidth:
                               MediaQuery.of(context).size.width),
@@ -102,6 +112,14 @@ class CreateAccount extends StatelessWidget {
                         mainAxisAlignment: MainAxisAlignment.center,
                         children: [
                           CustomButtonsWidget(
+                              onPress: () {
+                                Navigator.push(
+                                  context,
+                                  MaterialPageRoute(
+                                    builder: (context) => const WorkingOnIt(),
+                                  ),
+                                );
+                              },
                               fgColor: Colors.black,
                               customFontSize: 14,
                               isElevatedButton: false,
@@ -110,6 +128,14 @@ class CreateAccount extends StatelessWidget {
                                   MediaQuery.of(context).size.width),
                           const Text('&'),
                           CustomButtonsWidget(
+                              onPress: () {
+                                Navigator.push(
+                                  context,
+                                  MaterialPageRoute(
+                                    builder: (context) => const WorkingOnIt(),
+                                  ),
+                                );
+                              },
                               isElevatedButton: false,
                               customFontSize: 14,
                               fgColor: Colors.black,

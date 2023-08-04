@@ -12,7 +12,8 @@ class CustomEditorChoiceWidget extends StatelessWidget {
       this.containerHeight = 100,
       this.sizedBoxHeight = 10,
       this.mainFontSize = 16,
-      this.profileFontSize = 13});
+      this.profileFontSize = 13,
+      this.onPress});
   final String mainMealName;
   final String mainImageAsset;
   final String profileName;
@@ -22,6 +23,7 @@ class CustomEditorChoiceWidget extends StatelessWidget {
   final double sizedBoxHeight;
   final double mainFontSize;
   final double profileFontSize;
+  final Function()? onPress;
 
   @override
   Widget build(BuildContext context) {
@@ -60,7 +62,6 @@ class CustomEditorChoiceWidget extends StatelessWidget {
                       customText1: mainMealName,
                       customFontSize1: mainFontSize,
                       ifTextOverFlow: TextOverflow.clip,
-                      isTextAlign: TextAlign.start,
                     ),
                     SizedBox(height: sizedBoxHeight),
                     Row(
@@ -88,7 +89,7 @@ class CustomEditorChoiceWidget extends StatelessWidget {
                   width: 30,
                   height: 30,
                   child: ElevatedButton(
-                    onPressed: () {},
+                    onPressed: onPress,
                     style: ButtonStyle(
                       shape: MaterialStateProperty.all<RoundedRectangleBorder>(
                           RoundedRectangleBorder(

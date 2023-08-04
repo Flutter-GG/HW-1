@@ -16,6 +16,7 @@ class CustomButtonsWidget extends StatelessWidget {
     this.sizedBoxButtonWidth = 0,
     this.sizedBoxButtonHeight = 0,
     this.sizedBoxIcon,
+    this.onPress,
   });
   final Color bgColor;
   final Color fgColor;
@@ -29,7 +30,7 @@ class CustomButtonsWidget extends StatelessWidget {
   final double sizedBoxButtonWidth;
   final double sizedBoxButtonHeight;
   final Icon? sizedBoxIcon;
-  // final Function onPress;
+  final Function()? onPress; //any function need (), it is sucks
 
   @override
   Widget build(BuildContext context) {
@@ -42,7 +43,7 @@ class CustomButtonsWidget extends StatelessWidget {
             fixedSize: Size(elevatedButtonWidth!, elevatedButtonHeight),
             backgroundColor: bgColor,
             foregroundColor: fgColor),
-        onPressed: () {},
+        onPressed: onPress,
         child: Text(
           customText!,
           style: TextStyle(
@@ -55,7 +56,7 @@ class CustomButtonsWidget extends StatelessWidget {
         width: sizedBoxButtonWidth,
         height: sizedBoxButtonHeight,
         child: ElevatedButton(
-            onPressed: () {},
+            onPressed: onPress,
             style: ButtonStyle(
               shape: MaterialStateProperty.all<RoundedRectangleBorder>(
                 RoundedRectangleBorder(
@@ -70,7 +71,7 @@ class CustomButtonsWidget extends StatelessWidget {
       );
     } else {
       return TextButton(
-        onPressed: () {},
+        onPressed: onPress,
         child: Text(
           customText!,
           style: TextStyle(

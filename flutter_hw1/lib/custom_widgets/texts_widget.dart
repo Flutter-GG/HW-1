@@ -3,7 +3,6 @@ import "package:flutter/material.dart";
 class CustomTextWidget extends StatelessWidget {
   const CustomTextWidget({
     super.key,
-    this.isTextAlign = TextAlign.center,
     this.ifTextOverFlow = TextOverflow.ellipsis,
     this.isText2 = false,
     required this.customText1,
@@ -15,7 +14,6 @@ class CustomTextWidget extends StatelessWidget {
     this.isBold1 = true,
     this.isBold2 = true,
   });
-  final TextAlign isTextAlign;
   final TextOverflow ifTextOverFlow;
   final bool isText2;
   final String customText1;
@@ -34,7 +32,6 @@ class CustomTextWidget extends StatelessWidget {
             children: [
               Text(
                 customText1,
-                textAlign: isTextAlign,
                 style: TextStyle(
                     overflow: ifTextOverFlow,
                     fontSize: customFontSize1,
@@ -46,7 +43,6 @@ class CustomTextWidget extends StatelessWidget {
               ),
               Text(
                 customText2!,
-                textAlign: isTextAlign,
                 style: TextStyle(
                     overflow: ifTextOverFlow,
                     fontSize: customFontSize2,
@@ -58,7 +54,6 @@ class CustomTextWidget extends StatelessWidget {
         : Column(children: [
             Text(
               customText1,
-              textAlign: isTextAlign,
               style: TextStyle(
                   overflow: ifTextOverFlow,
                   fontSize: customFontSize1,

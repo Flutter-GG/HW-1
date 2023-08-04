@@ -5,20 +5,24 @@ class textfield extends StatelessWidget {
     super.key,
     required this.tittle,
     required this.width,
-    required this.search,
+    required this.TextLogo,
+    required this.TextFieldwidth,
+    required this.TextFieldheight,
   });
   final String tittle;
   final double width;
-  final IconData search;
+  final IconData TextLogo;
+  final double TextFieldwidth;
+  final double TextFieldheight;
   @override
   Widget build(BuildContext context) {
     return SizedBox(
-      height: 100,
-      width: 300,
+      height: TextFieldwidth,
+      width: TextFieldheight,
       child: TextField(
         decoration: InputDecoration(
           hintText: tittle,
-          prefixIcon: Icon(Icons.search),
+          prefixIcon: Icon(TextLogo),
           enabledBorder: OutlineInputBorder(
             borderSide: BorderSide(width: width, color: Colors.black),
             borderRadius: BorderRadius.circular(20.0),

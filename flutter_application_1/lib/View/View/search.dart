@@ -34,7 +34,9 @@ class search extends StatelessWidget {
                   child: textfield(
                     tittle: "search",
                     width: 1,
-                    search: Icons.search,
+                    TextLogo: Icons.search,
+                    TextFieldheight: 300,
+                    TextFieldwidth: 90,
                   ),
                 ),
                 SizedBox(

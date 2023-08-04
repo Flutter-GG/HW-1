@@ -3,7 +3,6 @@ import 'package:yum/views/signup_screen.dart';
 import 'package:yum/widget/button_widget.dart';
 import 'package:yum/widget/text_widget.dart';
 import '../widget/formfield_widget.dart';
-import '../widget/image_widget.dart';
 
 class LoginScreen extends StatelessWidget {
   const LoginScreen({super.key});
@@ -15,10 +14,10 @@ class LoginScreen extends StatelessWidget {
           onPressed: () {
             Navigator.pop(context);
           },
-          icon: Icon(Icons.arrow_back),
+          icon: const Icon(Icons.arrow_back),
           //replace with our own icon data.
         ),
-        backgroundColor: Color(0xffF8F8F8),
+        backgroundColor: const Color(0xffF8F8F8),
         elevation: 0,
         iconTheme: const IconThemeData(
           color: Colors.black, //change your color here

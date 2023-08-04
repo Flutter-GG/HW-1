@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:yum/views/login_screen.dart';
-import 'package:yum/views/signup_screen.dart';
+
 import 'views/init_screen.dart';
 
 main() {

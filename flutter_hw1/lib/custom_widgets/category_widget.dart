@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 
+/* this file for category choice chip,
+it is for filtring the page */
 class CustomCategoryWidget extends StatefulWidget {
   @override
   _CustomCategoryWidgetState createState() => _CustomCategoryWidgetState();

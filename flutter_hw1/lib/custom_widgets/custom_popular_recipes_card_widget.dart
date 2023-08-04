@@ -1,6 +1,10 @@
 import "package:flutter/material.dart";
 import "package:flutter_hw1/custom_widgets/texts_widget.dart";
 
+/* this file for popular recipes and I mean by that,
+the card in the search page called 'Popular Recipes,
+this will be the main cards for this section it has the meal image and name of the meal only and doesn't has button,
+I think I will make it card button that if the user click on the card the card will increase and become the page of the meal but I don't know how to do it */
 class CustomPopularRecipesCardWidget extends StatelessWidget {
   const CustomPopularRecipesCardWidget(
       {super.key,

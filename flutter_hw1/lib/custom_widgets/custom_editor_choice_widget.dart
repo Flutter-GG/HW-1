@@ -1,6 +1,10 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_hw1/custom_widgets/texts_widget.dart';
 
+/* this file for editor choice and I mean by that,
+the card in the search page called 'editor's choice,
+this will be the main cards for this section it has the meal image and name of the meal, also the profile and name of the creator of this meal
+it has button to open the page of the meal but it doesn't work becouse I don't know how to style it */
 class CustomEditorChoiceWidget extends StatelessWidget {
   const CustomEditorChoiceWidget(
       {super.key,

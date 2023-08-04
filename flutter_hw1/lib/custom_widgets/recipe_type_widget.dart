@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 
+/* this file for recipe type choice chip,
+it is for filtring the page, like category_widget.dart file but it is support selection of multiable choice chip */
 class CustomRecipeTypeWidget extends StatefulWidget {
   @override
   _RecipeTypeWidgetState createState() => _RecipeTypeWidgetState();

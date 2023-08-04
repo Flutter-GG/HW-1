@@ -7,6 +7,9 @@ import 'package:flutter_hw1/pages/create_account_page.dart';
 import 'package:flutter_hw1/pages/search_page.dart';
 import 'package:flutter_hw1/pages/working_on_it_page.dart';
 
+/* this file for 'Login' page, it has username and password fields and text button 'Forgot password?' and elevated button for new users,
+'Forgot password?' button will sends you to 'working on it' page and 'Sign Up' button will sends you to create account page,
+'Login' button will sends you to the main page 'search_page' */
 class LoginPage extends StatelessWidget {
   const LoginPage({super.key});
 
@@ -14,7 +17,7 @@ class LoginPage extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       backgroundColor: Colors.white,
-      appBar: CustomAppBarWidget(page: 'Login'),
+      appBar: const CustomAppBarWidget(page: 'Login'),
       body: Padding(
         padding: const EdgeInsets.symmetric(vertical: 50.0),
         child: Column(
@@ -28,7 +31,7 @@ class LoginPage extends StatelessWidget {
                   color: Colors.white,
                 ),
                 child: Padding(
-                  padding: EdgeInsets.symmetric(horizontal: 30.0),
+                  padding: const EdgeInsets.symmetric(horizontal: 30.0),
                   child: Column(
                     children: [
                       const CustomFieldsWidget(

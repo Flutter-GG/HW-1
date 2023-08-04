@@ -4,6 +4,8 @@ import 'package:flutter_hw1/custom_widgets/category_widget.dart';
 import 'package:flutter_hw1/custom_widgets/recipe_type_widget.dart';
 import 'package:flutter_hw1/custom_widgets/texts_widget.dart';
 
+/* this file for filter page, it has name of the page and sections but
+I didn't add functionality to it yet */
 class BottomSheetContent extends StatelessWidget {
   const BottomSheetContent({Key? key}) : super(key: key);
 

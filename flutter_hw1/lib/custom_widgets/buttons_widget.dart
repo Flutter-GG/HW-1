@@ -1,6 +1,8 @@
 import "package:flutter/material.dart";
-// import "package:flutter_hw1/custom_widgets/button_functions.dart";
 
+/* this file for custom buttons,
+I used 'if statement' to make it more reuseable for elevated button,
+text button or custom size button */
 class CustomButtonsWidget extends StatelessWidget {
   const CustomButtonsWidget({
     super.key,
@@ -35,6 +37,7 @@ class CustomButtonsWidget extends StatelessWidget {
   Widget build(BuildContext context) {
     if (isElevatedButton == true) {
       return ElevatedButton(
+        // this will work by defualt
         style: ElevatedButton.styleFrom(
             shape: RoundedRectangleBorder(
               borderRadius: BorderRadius.circular(12),
@@ -52,6 +55,7 @@ class CustomButtonsWidget extends StatelessWidget {
       );
     } else if (isSizedBoxButton == true) {
       return SizedBox(
+        // this will work if you make 'isSizedBoxButton' true and 'isElevatedButton' false
         width: sizedBoxButtonWidth,
         height: sizedBoxButtonHeight,
         child: ElevatedButton(
@@ -70,6 +74,7 @@ class CustomButtonsWidget extends StatelessWidget {
       );
     } else {
       return TextButton(
+        // this for text button if the above were false
         onPressed: onPress,
         child: Text(
           customText!,

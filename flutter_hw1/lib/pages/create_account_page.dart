@@ -6,6 +6,10 @@ import 'package:flutter_hw1/custom_widgets/texts_widget.dart';
 import 'package:flutter_hw1/pages/search_page.dart';
 import 'package:flutter_hw1/pages/working_on_it_page.dart';
 
+/* this file for 'create account' page, it has appBar, Username, Firs and Last name, email address and password fields,
+also has button 'Continue' to create account and two text buttons for terms and privacy,
+if you click on Terms and Privacy it will sends you to 'working on it' page to handle these pages and ensure the button work,
+but if you click on 'Continue' button it will send you to search page at this time becuase it is concept and not and actuial app */
 class CreateAccount extends StatelessWidget {
   const CreateAccount({super.key});
 

@@ -1,5 +1,6 @@
 import "package:flutter/material.dart";
 
+/* this file for custom text only to make all texts as the same wil simple params for me, it is support two text or one text by defualt */
 class CustomTextWidget extends StatelessWidget {
   const CustomTextWidget({
     super.key,

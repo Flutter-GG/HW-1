@@ -9,6 +9,11 @@ import 'package:flutter_hw1/pages/filters_page.dart';
 import 'package:flutter_hw1/pages/working_on_it_page.dart';
 import '../custom_widgets/custom_popular_recipes_card_widget.dart';
 
+/* this file is the main page of the app, it is search page, it has appBar,
+text field, filter button, choice cip, popular recipes section,
+editor's choice section and nav bar at the bottom,
+if you click on the filter button the filter page will apear from bottom,
+I didn't add functionality for nav bar at bottom but other buttons works fine */
 class SearchPage extends StatelessWidget {
   const SearchPage({super.key});
   void _showBottomSheet(BuildContext context) {
@@ -25,8 +30,10 @@ class SearchPage extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       backgroundColor: Colors.white,
-      appBar: const CustomAppBarWidget(page: 'Search'),
+      appBar:
+          const CustomAppBarWidget(page: 'Search'), // this is my custom appBar
       bottomNavigationBar: BottomNavigationBar(
+        // this for nav bar at the bottom, add icons only without functinality
         fixedColor: Colors.black,
         unselectedItemColor: Colors.grey,
         currentIndex: 0,
@@ -63,6 +70,7 @@ class SearchPage extends StatelessWidget {
                 const Expanded(
                   flex: 5,
                   child: CustomFieldsWidget(
+                    // text field for search
                     label: 'Search',
                     customFontSize: 16,
                     customHintText: 'Search',
@@ -72,6 +80,7 @@ class SearchPage extends StatelessWidget {
                 const SizedBox(width: 10),
                 Expanded(
                   child: CustomButtonsWidget(
+                    // the filter page button, the on press function on top of this file
                     onPress: () {
                       _showBottomSheet(context);
                     },
@@ -91,7 +100,8 @@ class SearchPage extends StatelessWidget {
             Row(
               mainAxisAlignment: MainAxisAlignment.center,
               children: [
-                const CustomTextWidget(customText1: 'Popular Recipes'),
+                const CustomTextWidget(
+                    customText1: 'Popular Recipes'), // Popular Recipes section
                 const SizedBox(width: 185),
                 CustomButtonsWidget(
                   onPress: () {
@@ -132,7 +142,8 @@ class SearchPage extends StatelessWidget {
             Row(
               mainAxisAlignment: MainAxisAlignment.center,
               children: [
-                const CustomTextWidget(customText1: "Editor's Choice"),
+                const CustomTextWidget(
+                    customText1: "Editor's Choice"), // Editor's Choice section
                 const SizedBox(width: 185),
                 CustomButtonsWidget(
                   onPress: () {

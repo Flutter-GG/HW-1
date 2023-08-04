@@ -1,5 +1,7 @@
 import "package:flutter/material.dart";
 
+/* this file for text field if the text, added functionality if the user click on the eye Icon the password will apear and hide,
+I'm not expert at flutter and used this method from this video 'https://www.youtube.com/watch?v=oIGH3U-1PVY' and used chatGPT to understand it */
 class CustomFieldsWidget extends StatefulWidget {
   const CustomFieldsWidget({
     Key? key,

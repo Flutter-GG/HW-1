@@ -4,6 +4,7 @@ import 'package:flutter_hw1/custom_widgets/texts_widget.dart';
 import 'package:flutter_hw1/pages/create_account_page.dart';
 import 'package:flutter_hw1/pages/login_page.dart';
 
+/* this file for main page, it only had two buttons for login and create account */
 class MainPage extends StatelessWidget {
   const MainPage({super.key});
 

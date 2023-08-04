@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_application_1/View/View/buttonSheet.dart';
 import 'package:flutter_application_1/View/compunent/buttonContainer.dart';
 import 'package:flutter_application_1/View/compunent/buttonNavigate.dart';
+import 'package:flutter_application_1/View/compunent/foodChoice.dart';
 import 'package:flutter_application_1/View/compunent/imageContainer.dart';
 import 'package:flutter_application_1/View/compunent/textfield.dart';
 import 'package:flutter_application_1/View/compunent/texttittle.dart';
@@ -180,124 +182,22 @@ class search extends StatelessWidget {
               person: "assets/image/Unknown-18.jpg",
               personName: "Kamal Yalderiz",
             ),
+            FloatingActionButton(
+              child: Icon(Icons.ice_skating),
+              backgroundColor: Colors.black,
+              onPressed: () {
+                showModalBottomSheet(
+                    isScrollControlled: false,
+                    shape: RoundedRectangleBorder(
+                        borderRadius:
+                            BorderRadius.vertical(top: Radius.circular(30))),
+                    context: context,
+                    builder: (context) => Buttonsheet());
+              },
+            )
           ],
         ),
       ),
     );
   }
 }
-
-class foodChoice extends StatelessWidget {
-  const foodChoice({
-    super.key,
-    required this.imagePath,
-    required this.foodDiscribction,
-    required this.person,
-    required this.personName,
-  });
-  final String imagePath;
-  final String foodDiscribction;
-  final String person;
-  final String personName;
-  @override
-  Widget build(BuildContext context) {
-    return Container(
-      width: 400,
-      height: 120,
-      decoration: BoxDecoration(
-        borderRadius: BorderRadius.circular(10),
-        color: Colors.white,
-        boxShadow: [
-          BoxShadow(
-            color: Colors.grey,
-            spreadRadius: 0.1,
-            blurRadius: 1,
-          ),
-        ],
-      ),
-      child: Padding(
-        padding: const EdgeInsets.all(8.0),
-        child: Row(
-          crossAxisAlignment: CrossAxisAlignment.end,
-          children: [
-            Container(
-              width: 110,
-              height: 110,
-              decoration: BoxDecoration(
-                  borderRadius: BorderRadius.circular(10),
-                  image: DecorationImage(
-                      image: AssetImage(imagePath), fit: BoxFit.cover)),
-            ),
-            Padding(
-              padding: const EdgeInsets.only(left: 30),
-              child: Column(
-                // mainAxisAlignment: MainAxisAlignment.start,
-                children: [
-                  Row(
-                    crossAxisAlignment: CrossAxisAlignment.end,
-                    children: [
-                      Text(
-                        foodDiscribction,
-                        style: TextStyle(
-                          fontSize: 20,
-                          fontWeight: FontWeight.bold,
-                        ),
-                        maxLines: 2,
-                      ),
-                      SizedBox(
-                        width: 30,
-                      ),
-                      Padding(
-                          padding: const EdgeInsets.only(top: 20),
-                          child: SizedBox.fromSize(
-                            size: Size(30, 30),
-                            child: Material(
-                              color: const Color.fromARGB(255, 2, 2, 2),
-                              child: InkWell(
-                                splashColor: Colors.white,
-                                onTap: () {},
-                                child: Column(
-                                  mainAxisAlignment: MainAxisAlignment.center,
-                                  children: <Widget>[
-                                    Icon(
-                                      Icons.arrow_forward,
-                                      color: Colors.white,
-                                    ), // <-- Icon
-                                  ],
-                                ),
-                              ),
-                            ),
-                          )),
-                    ],
-                  ),
-                  Padding(
-                    padding: const EdgeInsets.only(right: 80, top: 10),
-                    child: Row(
-                      children: [
-                        ClipRRect(
-                          borderRadius: BorderRadius.circular(100),
-                          child: Image.asset(
-                            person,
-                            width: 30,
-                            height: 30,
-                            fit: BoxFit.cover,
-                            //  alignment: Alignment.center,
-                          ),
-                        ),
-                        SizedBox(
-                          width: 10,
-                        ),
-                        Text(personName)
-                      ],
-                    ),
-                  ),
-                ],
-              ),
-            ),
-          ],
-        ),
-      ),
-    );
-  }
-}
-//"Easy homemode \n beef burger"

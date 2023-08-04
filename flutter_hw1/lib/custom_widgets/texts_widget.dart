@@ -1,7 +1,7 @@
-import 'package:flutter/material.dart';
+import "package:flutter/material.dart";
 
-class CustomText extends StatelessWidget {
-  const CustomText({
+class CustomTextWidget extends StatelessWidget {
+  const CustomTextWidget({
     super.key,
     this.isTextAlign = TextAlign.center,
     this.ifTextOverFlow = TextOverflow.ellipsis,

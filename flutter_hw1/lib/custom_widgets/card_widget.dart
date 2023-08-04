@@ -1,8 +1,8 @@
 import "package:flutter/material.dart";
 import "package:flutter_hw1/custom_widgets/texts_widget.dart";
 
-class CustomEditorChoice extends StatelessWidget {
-  const CustomEditorChoice(
+class CustomEditorChoiceWidget extends StatelessWidget {
+  const CustomEditorChoiceWidget(
       {super.key,
       required this.mainMealName,
       this.mainImageAsset = "assets/images/error.jpg",
@@ -56,7 +56,7 @@ class CustomEditorChoice extends StatelessWidget {
                   mainAxisAlignment: MainAxisAlignment.center,
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
-                    CustomText(
+                    CustomTextWidget(
                       customText1: mainMealName,
                       customFontSize1: mainFontSize,
                       ifTextOverFlow: TextOverflow.clip,
@@ -71,7 +71,7 @@ class CustomEditorChoice extends StatelessWidget {
                               fit: BoxFit.cover, height: 25, width: 25),
                         ),
                         const SizedBox(width: 10),
-                        CustomText(
+                        CustomTextWidget(
                           customText1: profileName,
                           customFontColor1: Colors.grey,
                           isBold1: true,
@@ -110,8 +110,8 @@ class CustomEditorChoice extends StatelessWidget {
   }
 }
 
-class PopularRecipes extends StatelessWidget {
-  const PopularRecipes(
+class CustomPopularRecipesCardWidget extends StatelessWidget {
+  const CustomPopularRecipesCardWidget(
       {super.key,
       required this.mainMealName,
       this.mainImageAsset = "assets/images/error.jpg",
@@ -147,7 +147,7 @@ class PopularRecipes extends StatelessWidget {
               ),
               SizedBox(height: 15),
               Expanded(
-                child: CustomText(
+                child: CustomTextWidget(
                   customText1: mainMealName,
                   customFontSize1: mainFontSize,
                   isBold1: false,

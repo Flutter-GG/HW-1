@@ -1,7 +1,7 @@
-import 'package:flutter/material.dart';
+import "package:flutter/material.dart";
 
-class CustomButtons extends StatelessWidget {
-  const CustomButtons(
+class CustomButtonsWidget extends StatelessWidget {
+  const CustomButtonsWidget(
       {super.key,
       this.bgColor = Colors.black,
       this.fgColor = Colors.white,

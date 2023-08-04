@@ -61,7 +61,7 @@ class SearchPage extends StatelessWidget {
         ],
       ),
       body: Padding(
-        padding: const EdgeInsets.symmetric(horizontal: 20.0),
+        padding: const EdgeInsets.symmetric(horizontal: 15.0),
         child: Column(
           children: [
             Row(
@@ -102,7 +102,7 @@ class SearchPage extends StatelessWidget {
               children: [
                 const CustomTextWidget(
                     customText1: 'Popular Recipes'), // Popular Recipes section
-                const SizedBox(width: 185),
+                const SizedBox(width: 150),
                 CustomButtonsWidget(
                   onPress: () {
                     Navigator.push(
@@ -144,7 +144,7 @@ class SearchPage extends StatelessWidget {
               children: [
                 const CustomTextWidget(
                     customText1: "Editor's Choice"), // Editor's Choice section
-                const SizedBox(width: 185),
+                const SizedBox(width: 150),
                 CustomButtonsWidget(
                   onPress: () {
                     Navigator.push(

@@ -85,7 +85,7 @@ class LoginPage extends StatelessWidget {
                           elevatedButtonWidth:
                               MediaQuery.of(context).size.width),
                       const SizedBox(
-                        height: 300,
+                        height: 200,
                       ),
                       const CustomTextWidget(
                         customText1: 'Or Create new account',

@@ -38,6 +38,7 @@ class search extends StatelessWidget {
                     TextLogo: Icons.search,
                     TextFieldheight: 300,
                     TextFieldwidth: 90,
+                    password: false,
                   ),
                 ),
                 SizedBox(

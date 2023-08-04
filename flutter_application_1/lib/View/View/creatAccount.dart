@@ -35,7 +35,8 @@ class creatAccount extends StatelessWidget {
                 width: 1,
                 TextLogo: Icons.person,
                 TextFieldwidth: 100,
-                TextFieldheight: 400),
+                TextFieldheight: 400,
+                password: false,),
           ),
           Padding(
             padding: EdgeInsets.symmetric(horizontal: 30),
@@ -80,7 +81,8 @@ class creatAccount extends StatelessWidget {
               width: 1,
               TextLogo: Icons.mail,
               TextFieldwidth: 100,
-              TextFieldheight: 400),
+              TextFieldheight: 400,
+              password: false,),
           Padding(
             padding: EdgeInsets.all(8.0),
             child: textButtonTittle(title: "Password", padding: 240),
@@ -95,6 +97,7 @@ class creatAccount extends StatelessWidget {
             TextFieldwidth: 100,
             TextFieldheight: 400,
             LeftTextLogo: Icons.remove_red_eye_outlined,
+            password: true,
           ),
           NavigationButton(
             title: "Continue",

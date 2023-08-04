@@ -35,6 +35,7 @@ class login extends StatelessWidget {
               TextLogo: Icons.mail_outline,
               TextFieldheight: 400,
               TextFieldwidth: 100,
+              password: false,
             ),
           ),
           textButtonTittle(title: "Passwoard", padding: 240),
@@ -42,11 +43,12 @@ class login extends StatelessWidget {
             height: 15,
           ),
           textfield(
-            tittle: "Enter Email Address",
+            tittle: "Enter Password",
             width: 1,
             TextLogo: Icons.lock_outline,
             TextFieldheight: 400,
             TextFieldwidth: 100,
+            password: true,
           ),
           NavigationButton(
             title: "Login",

@@ -51,7 +51,7 @@ class login extends StatelessWidget {
             title: "Login",
             TextcolorButton: Colors.white,
             colorButton: Color(0xff042627),
-            a: search(),
+            ViewName: search(),
           ),
           SizedBox(
             height: 20,
@@ -77,7 +77,7 @@ class login extends StatelessWidget {
             title: "Sign Up",
             TextcolorButton: Colors.white,
             colorButton: Color(0xff042627),
-            a: creatAccount(),
+            ViewName: creatAccount(),
           ),
         ],
       ),

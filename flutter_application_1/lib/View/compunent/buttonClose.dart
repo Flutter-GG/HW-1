@@ -6,19 +6,19 @@ class NavigationButton extends StatelessWidget {
     super.key,
     required this.title,
     required this.colorButton,
-    required this.TextcolorButton, required this.a,
+    required this.TextcolorButton, required this.ViewName,
   });
   final String title;
   final Color colorButton;
   final Color TextcolorButton;
-  final Widget a;
+  final Widget ViewName;
   @override
   Widget build(BuildContext context) {
     return ElevatedButton(
       onPressed: () {
         Navigator.push(
           context,
-          MaterialPageRoute(builder: (context) => a),
+          MaterialPageRoute(builder: (context) => ViewName),
         );
       },
       child: Text(

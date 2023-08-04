@@ -52,7 +52,7 @@ class onboarding extends StatelessWidget {
                     title: "Get Started",
                     TextcolorButton: Colors.white,
                     colorButton: Color(0xff042627),
-                    a: login(),
+                    ViewName: login(),
                   )
                 ],
               ),

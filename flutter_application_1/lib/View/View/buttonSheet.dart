@@ -49,7 +49,7 @@ class Buttonsheet extends StatelessWidget {
               title: "Apply Filter",
               colorButton: Color(0xff80b6bd),
               TextcolorButton: Colors.white,
-              a: login(),
+              ViewName: login(),
             ),
             SizedBox(
               height: 10,
@@ -58,7 +58,7 @@ class Buttonsheet extends StatelessWidget {
               title: "clear filter",
               colorButton: Colors.white,
               TextcolorButton: Color(0xff80b6bd),
-              a: creatAccount(),
+              ViewName: creatAccount(),
             )
           ],
         ),

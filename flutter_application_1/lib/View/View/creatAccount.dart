@@ -99,7 +99,7 @@ class creatAccount extends StatelessWidget {
             title: "Continue",
             TextcolorButton: Colors.white,
             colorButton: Color(0xff042627),
-            a: login(),
+            ViewName: login(),
           ),
           SizedBox(
             height: 20,

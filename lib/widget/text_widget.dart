@@ -12,12 +12,12 @@ class TextWidget extends StatelessWidget {
   final double? size;
   final FontWeight? weight;
   final Color? color;
+
   @override
   Widget build(BuildContext context) {
     return Text(
       text,
       style: TextStyle(fontSize: size, fontWeight: weight, color: color),
-      textAlign: TextAlign.center,
     );
   }
 }

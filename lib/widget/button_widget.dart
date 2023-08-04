@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 
+import 'text_widget.dart';
+
 class CustomElevatedButton extends StatelessWidget {
   const CustomElevatedButton(
       {super.key,
@@ -16,16 +18,20 @@ class CustomElevatedButton extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return ElevatedButton(
-      onPressed: () {},
+      onPressed: onPressed,
       style: ElevatedButton.styleFrom(
           backgroundColor: bgColor,
           foregroundColor: fgColor,
           side: isBorderSide! ? const BorderSide(color: Colors.black) : null,
-          fixedSize: Size(MediaQuery.of(context).size.width - 50, 50),
+          fixedSize: Size(MediaQuery.of(context).size.width - 30, 60),
           shape: RoundedRectangleBorder(
-            borderRadius: BorderRadius.all(Radius.circular(10)),
+            borderRadius: BorderRadius.all(Radius.circular(20)),
           )),
-      child: Text(title),
+      child: TextWidget(
+        text: title,
+        size: 15,
+        weight: FontWeight.bold,
+      ),
     );
   }
 }

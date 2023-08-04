@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:yum/views/login_screen.dart';
+import 'package:yum/views/signup_screen.dart';
 import 'package:yum/widget/button_widget.dart';
 import 'package:yum/widget/text_widget.dart';
 import '../widget/image_widget.dart';
@@ -8,14 +10,14 @@ class InitScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Color(0xff70B9BE),
+      backgroundColor: const Color(0xff70B9BE),
       body: SafeArea(
           bottom: false,
           child: Column(
             children: [
-              Expanded(
+              const Expanded(
                   flex: 2,
-                  child: const ImageWidget(
+                  child: ImageWidget(
                     path: 'assets/images/imageInit.jpg',
                   )),
               Expanded(
@@ -23,12 +25,12 @@ class InitScreen extends StatelessWidget {
                 child: Container(
                   width: MediaQuery.of(context).size.width,
                   decoration: BoxDecoration(
-                      color: Color(0xffF8F8F8),
+                      color: const Color(0xffF8F8F8),
                       borderRadius: BorderRadius.circular(20)),
-                  child: const Column(
+                  child: Column(
                     mainAxisAlignment: MainAxisAlignment.spaceAround,
                     children: [
-                      Column(
+                      const Column(
                         children: [
                           TextWidget(
                             text: "Let's cooking",
@@ -52,6 +54,13 @@ class InitScreen extends StatelessWidget {
                         children: [
                           CustomElevatedButton(
                             title: 'Get Started',
+                            onPressed: () {
+                              Navigator.push(
+                                context,
+                                MaterialPageRoute(
+                                    builder: (context) => const LoginScreen()),
+                              );
+                            },
                           )
                         ],
                       )

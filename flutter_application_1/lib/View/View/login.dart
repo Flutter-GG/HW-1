@@ -1,4 +1,7 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_application_1/View/View/buttonSheet.dart';
+import 'package:flutter_application_1/View/View/creatAccount.dart';
+import 'package:flutter_application_1/View/View/search.dart';
 import 'package:flutter_application_1/View/compunent/buttonClose.dart';
 import 'package:flutter_application_1/View/compunent/textButtonTittle.dart';
 import 'package:flutter_application_1/View/compunent/textfield.dart';
@@ -48,6 +51,7 @@ class login extends StatelessWidget {
             title: "Login",
             TextcolorButton: Colors.white,
             colorButton: Color(0xff042627),
+            a: search(),
           ),
           SizedBox(
             height: 20,
@@ -73,6 +77,7 @@ class login extends StatelessWidget {
             title: "Sign Up",
             TextcolorButton: Colors.white,
             colorButton: Color(0xff042627),
+            a: creatAccount(),
           ),
         ],
       ),

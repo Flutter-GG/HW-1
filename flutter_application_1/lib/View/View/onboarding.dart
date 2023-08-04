@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_application_1/View/View/login.dart';
 import 'package:flutter_application_1/View/compunent/buttonClose.dart';
 
 class onboarding extends StatelessWidget {
@@ -51,6 +52,7 @@ class onboarding extends StatelessWidget {
                     title: "Get Started",
                     TextcolorButton: Colors.white,
                     colorButton: Color(0xff042627),
+                    a: login(),
                   )
                 ],
               ),

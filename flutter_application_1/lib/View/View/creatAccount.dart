@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_application_1/View/View/login.dart';
 import 'package:flutter_application_1/View/View/search.dart';
 import 'package:flutter_application_1/View/compunent/buttonClose.dart';
 import 'package:flutter_application_1/View/compunent/textButtonTittle.dart';
@@ -98,6 +99,7 @@ class creatAccount extends StatelessWidget {
             title: "Continue",
             TextcolorButton: Colors.white,
             colorButton: Color(0xff042627),
+            a: login(),
           ),
           SizedBox(
             height: 20,

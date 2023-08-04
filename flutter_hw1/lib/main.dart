@@ -1,6 +1,6 @@
 import "package:flutter/material.dart";
 import "package:flutter_hw1/custom_widgets/app_bar_widget.dart";
-import "package:flutter_hw1/custom_widgets/card_widget.dart";
+import 'package:flutter_hw1/custom_widgets/custom_popular_recipes_card_widget.dart';
 import "package:flutter_hw1/custom_widgets/buttons_widget.dart";
 import 'package:flutter_hw1/custom_widgets/category_widget.dart';
 import "package:flutter_hw1/custom_widgets/recie_type_widget.dart";

@@ -1,16 +1,18 @@
 import "package:flutter/material.dart";
+// import "package:flutter_hw1/custom_widgets/button_functions.dart";
 
 class CustomButtonsWidget extends StatelessWidget {
-  const CustomButtonsWidget(
-      {super.key,
-      this.bgColor = Colors.black,
-      this.fgColor = Colors.white,
-      this.customFontSize = 16,
-      this.isBold = true,
-      required this.customText,
-      this.isElevatedButton = true,
-      required this.elevatedButtonWidth,
-      this.elevatedButtonHeight = 50});
+  const CustomButtonsWidget({
+    super.key,
+    this.bgColor = Colors.black,
+    this.fgColor = Colors.white,
+    this.customFontSize = 16,
+    this.isBold = true,
+    this.isElevatedButton = true,
+    this.elevatedButtonHeight = 50,
+    required this.customText,
+    required this.elevatedButtonWidth,
+  });
   final Color bgColor;
   final Color fgColor;
   final double customFontSize;
@@ -19,6 +21,7 @@ class CustomButtonsWidget extends StatelessWidget {
   final bool isElevatedButton;
   final double elevatedButtonWidth;
   final double elevatedButtonHeight;
+  // final Function onPress;
 
   @override
   Widget build(BuildContext context) {
@@ -43,8 +46,10 @@ class CustomButtonsWidget extends StatelessWidget {
             onPressed: () {},
             child: Text(
               customText,
-              style: const TextStyle(
-                  color: Colors.red, fontSize: 16, fontWeight: FontWeight.bold),
+              style: TextStyle(
+                  color: fgColor,
+                  fontSize: customFontSize,
+                  fontWeight: isBold ? FontWeight.bold : FontWeight.normal),
             ),
           );
   }

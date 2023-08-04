@@ -18,29 +18,33 @@ class CustomFieldsWidget extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Column(
-      mainAxisAlignment: MainAxisAlignment.center,
-      crossAxisAlignment: CrossAxisAlignment.start,
-      children: [
-        Text(
-          label,
-          textAlign: TextAlign.start,
-          style: TextStyle(
-              fontSize: customFontSize,
-              fontWeight: isBold ? FontWeight.bold : FontWeight.normal),
-        ),
-        SizedBox(height: 8),
-        TextField(
-          decoration: InputDecoration(
-            hintText: customHintText,
-            prefixIcon: customPrefixIcon,
-            suffixIcon: customSuffixIcon,
-            border: const OutlineInputBorder(
-              borderRadius: BorderRadius.all(Radius.circular(10)),
+    return Center(
+      child: Column(
+        crossAxisAlignment: CrossAxisAlignment.start,
+        children: [
+          Text(
+            label,
+            textAlign: TextAlign.start,
+            style: TextStyle(
+                fontSize: customFontSize,
+                fontWeight: isBold ? FontWeight.bold : FontWeight.normal),
+          ),
+          SizedBox(height: 8),
+          Container(
+            width: MediaQuery.of(context).size.width,
+            child: TextField(
+              decoration: InputDecoration(
+                hintText: customHintText,
+                prefixIcon: customPrefixIcon,
+                suffixIcon: customSuffixIcon,
+                border: const OutlineInputBorder(
+                  borderRadius: BorderRadius.all(Radius.circular(16)),
+                ),
+              ),
             ),
           ),
-        ),
-      ],
+        ],
+      ),
     );
   }
 }

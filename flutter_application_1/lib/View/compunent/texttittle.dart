@@ -17,6 +17,7 @@ class texttittle extends StatelessWidget {
   final double size1;
   final double size2;
   final Color color1;
+  
   @override
   Widget build(BuildContext context) {
     return Row(

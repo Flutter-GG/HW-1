@@ -12,15 +12,11 @@ class MainApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const MaterialApp(
-      home: Scaffold(
-        body: Center(
-            child: CustomCard(
-          mainMealName: 'mainMealName',
-          profileName: 'profileName',
-          containerWidth: 300,
-        )),
+    return MaterialApp(
+        home: Scaffold(
+      body: Center(
+        child: PopularRecipes(mainMealName: "mainMealName"),
       ),
-    );
+    ));
   }
 }

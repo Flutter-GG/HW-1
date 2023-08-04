@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_application_1/View/View/buttonSheet.dart';
 import 'package:flutter_application_1/View/View/login.dart';
+import 'package:flutter_application_1/View/View/onboarding.dart';
 import 'package:flutter_application_1/View/View/search.dart';
 
 void main() {
@@ -14,7 +15,7 @@ class MainApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return const MaterialApp(
       debugShowCheckedModeBanner: false,
-      home: login(),
+      home: onboarding(),
     );
   }
 }

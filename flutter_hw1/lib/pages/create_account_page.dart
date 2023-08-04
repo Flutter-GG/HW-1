@@ -19,7 +19,7 @@ class CreateAccount extends StatelessWidget {
       backgroundColor: Colors.white,
       appBar: CustomAppBarWidget(page: 'Create Account'),
       body: Padding(
-        padding: const EdgeInsets.symmetric(vertical: 50.0),
+        padding: const EdgeInsets.symmetric(vertical: 25.0),
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
@@ -55,7 +55,7 @@ class CreateAccount extends StatelessWidget {
                                     Icon(Icons.person_2_outlined)),
                           ),
                           SizedBox(
-                            width: 20,
+                            width: 15,
                           ),
                           Expanded(
                             child: CustomFieldsWidget(
@@ -69,7 +69,7 @@ class CreateAccount extends StatelessWidget {
                         ],
                       ),
                       const SizedBox(
-                        height: 20,
+                        height: 15,
                       ),
                       const CustomFieldsWidget(
                           label: 'Email Address',
@@ -78,7 +78,7 @@ class CreateAccount extends StatelessWidget {
                           customHintText: 'Email Address',
                           customPrefixIcon: Icon(Icons.email_outlined)),
                       const SizedBox(
-                        height: 20,
+                        height: 15,
                       ),
                       const CustomFieldsWidget(
                         label: 'Password',
@@ -89,7 +89,7 @@ class CreateAccount extends StatelessWidget {
                         customSuffixIcon: Icon(Icons.remove_red_eye_outlined),
                       ),
                       const SizedBox(
-                        height: 20,
+                        height: 15,
                       ),
                       CustomButtonsWidget(
                           onPress: () {
@@ -104,7 +104,7 @@ class CreateAccount extends StatelessWidget {
                           elevatedButtonWidth:
                               MediaQuery.of(context).size.width),
                       const SizedBox(
-                        height: 20,
+                        height: 15,
                       ),
                       const CustomTextWidget(
                           customFontSize1: 13,

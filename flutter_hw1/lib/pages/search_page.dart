@@ -102,7 +102,7 @@ class SearchPage extends StatelessWidget {
               children: [
                 const CustomTextWidget(
                     customText1: 'Popular Recipes'), // Popular Recipes section
-                const SizedBox(width: 150),
+                const SizedBox(width: 125),
                 CustomButtonsWidget(
                   onPress: () {
                     Navigator.push(
@@ -144,7 +144,7 @@ class SearchPage extends StatelessWidget {
               children: [
                 const CustomTextWidget(
                     customText1: "Editor's Choice"), // Editor's Choice section
-                const SizedBox(width: 150),
+                const SizedBox(width: 125),
                 CustomButtonsWidget(
                   onPress: () {
                     Navigator.push(

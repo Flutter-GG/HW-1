@@ -24,16 +24,16 @@ class BottomSheetContent extends StatelessWidget {
         mainAxisSize: MainAxisSize.min,
         children: [
           const CustomTextWidget(customText1: 'Filter'),
-          const SizedBox(height: 30),
+          const SizedBox(height: 10),
           const CustomTextWidget(customText1: 'Category'),
           CustomCategoryWidget(),
           const SizedBox(
-            height: 30,
+            height: 10,
           ),
           const CustomTextWidget(customText1: 'Recipe Type'),
           CustomRecipeTypeWidget(),
           const SizedBox(
-            height: 30,
+            height: 10,
           ),
           CustomButtonsWidget(
             customText: 'Apply Filter',
@@ -49,7 +49,7 @@ class BottomSheetContent extends StatelessWidget {
             bgColor: Color(0xff70B9BE),
           ),
           const SizedBox(
-            height: 30,
+            height: 10,
           )
         ],
       ),

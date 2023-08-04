@@ -1,85 +1,5 @@
+import 'package:flutter/material.dart';
 
-# Home Work 1
-
-The Weeknd project, which provides for the design of four facades in consistency and as required
-
-
-![Logo](https://docs.flutter.dev/assets/images/flutter-logo-sharing.png)
-
-
-## Features
-
-- Navigation page
-- Filters
-- Fullscreen mode
-
-
-## widgets
-
-- Image
-
-- AppBar
-- TextField
-- Row
-- Column
-- Icon
-- Button
-- Expanded
-- Container
-- SizedBox
-- Text 
-
-
-## Color Reference
-
-| Color             | Hex                                                                |
-| ----------------- | ------------------------------------------------------------------ |
-| Background color | ![#70b9be](https://via.placeholder.com/10/0a192f?text=+) #70b9be |
-| Buttons color | ![#042628](https://via.placeholder.com/10/f8f8f8?text=+) #042628 |
-
-
-
-
-## Git And Github
-
-
-Git status for Check on the status of the files
-```bash
-git status
-```
-
-Git clone for clone the project fork 
-
-```bash
-git clone https://////
-```
-
-Git add for save changes folders 
-
-```bash
-git add .
-```
-
-Git commit for save changes and tybe massege 
-
-```bash
-git coomit -m "commit massege"
-```
-Git branch for save all commits in new branch 
-
-```branch 
-git checkout -b branch name
-```
-
-Git push for send all changes to the Github 
-
-```bash
-git push --set-upstream origin branch Name
-```
-
-## coumpunent/Examples
-
-```dart
 class imageContainer extends StatelessWidget {
   const imageContainer({
     super.key,
@@ -145,5 +65,16 @@ class imageContainer extends StatelessWidget {
     );
   }
 }
-```
 
+
+// Container(
+//               width: 100,
+//               height: 100,
+//               decoration: BoxDecoration(
+//                 borderRadius: BorderRadius.circular(10),
+//                 color: Colors.black,
+//                 image: DecorationImage(
+//                     image: AssetImage("assets/image/Easy Boiled Lobster.jpg"),
+//                     fit: BoxFit.cover),
+//               ),
+//             )

@@ -37,12 +37,12 @@ class creatAccount extends StatelessWidget {
                 TextFieldheight: 400),
           ),
           Padding(
-            padding: EdgeInsets.symmetric(horizontal: 40),
+            padding: EdgeInsets.symmetric(horizontal: 30),
             child: Row(
               children: [
                 textButtonTittle(title: "First Name", padding: 20),
                 SizedBox(
-                  width: 50,
+                  width: 80,
                 ),
                 textButtonTittle(title: "Last Name", padding: 30),
               ],
@@ -52,7 +52,7 @@ class creatAccount extends StatelessWidget {
             height: 10,
           ),
           Padding(
-            padding: EdgeInsets.symmetric(horizontal: 40),
+            padding: EdgeInsets.symmetric(horizontal: 10),
             child: Row(
               children: [
                 textfieldsmall(

@@ -14,6 +14,6 @@ class textfieldsmall extends StatelessWidget {
         width: 1,
         TextLogo: Icons.person,
         TextFieldwidth: 100,
-        TextFieldheight: 150);
+        TextFieldheight: 180);
   }
 }

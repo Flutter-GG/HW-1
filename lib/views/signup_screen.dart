@@ -2,7 +2,6 @@ import 'package:flutter/material.dart';
 import 'package:yum/widget/button_widget.dart';
 import 'package:yum/widget/text_widget.dart';
 import '../widget/formfield_widget.dart';
-import '../widget/image_widget.dart';
 
 class SignupScreen extends StatelessWidget {
   const SignupScreen({super.key});
@@ -10,9 +9,9 @@ class SignupScreen extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        backgroundColor: Color(0xffF8F8F8),
+        backgroundColor: const Color(0xffF8F8F8),
         elevation: 0,
-        iconTheme: IconThemeData(
+        iconTheme: const IconThemeData(
           color: Colors.black, //change your color here
         ),
         title: const TextWidget(
@@ -24,7 +23,7 @@ class SignupScreen extends StatelessWidget {
           onPressed: () {
             Navigator.pop(context);
           },
-          icon: Icon(Icons.arrow_back),
+          icon: const Icon(Icons.arrow_back),
           //replace with our own icon data.
         ),
       ),

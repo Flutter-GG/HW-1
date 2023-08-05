@@ -4,7 +4,7 @@
 
 #### this is the page that will be at first of open the app
 
-![main page](Readme_images/mainPage.png)
+![main page](flutter_hw1/Readme_images/mainPage.png)
 
 ### login page
 
@@ -16,24 +16,24 @@
 
 #### this is the create account page
 
-![create account page, password unvisiable](Readme_images/createAccountPage.png)
-![create account page, password visiable](Readme_images/createAccountPage2.png)
+![create account page, password unvisiable](flutter_hw1/Readme_images/createAccountPage.png)
+![create account page, password visiable](flutter_hw1/Readme_images/createAccountPage2.png)
 
 ### search page
 
 #### this is the search page
 
-![search page](Readme_images/searchPage.png)
-![search page, choice chip chosed](Readme_images/searchPage2.png)
+![search page](flutter_hw1/Readme_images/searchPage.png)
+![search page, choice chip chosed](flutter_hw1/Readme_images/searchPage2.png)
 
 ### filter page
 
 #### this is the filter page
 
-![filter page](Readme_images/filterPage.png)
+![filter page](flutter_hw1/Readme_images/filterPage.png)
 
 ### working on it page
 
 #### this is the working on it page
 
-![workin on it page](Readme_images/workingOnItPage.png)
+![workin on it page](flutter_hw1/Readme_images/workingOnItPage.png)

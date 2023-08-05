@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:yum/widget/button_widget.dart';
+import 'package:yum/views/search_screen.dart';
+import 'package:yum/widget/button/button_widget.dart';
 import 'package:yum/widget/text_widget.dart';
 import '../widget/formfield_widget.dart';
 
@@ -12,8 +13,8 @@ class SignupScreen extends StatelessWidget {
         backgroundColor: const Color(0xffF8F8F8),
         elevation: 0,
         iconTheme: const IconThemeData(
-          color: Colors.black, //change your color here
-        ),
+            color: Color(0xff042628) //change your color here
+            ),
         title: const TextWidget(
           text: "Create Account",
           color: Color(0xff042628),
@@ -42,7 +43,7 @@ class SignupScreen extends StatelessWidget {
             ),
             Center(
               child: Container(
-                  padding: const EdgeInsets.only(top: 10, bottom: 10),
+                  padding: const EdgeInsets.only(top: 10),
                   width: MediaQuery.of(context).size.width - 50,
                   child: const CustomTextFormField(
                     hintText: "Username",
@@ -132,8 +133,15 @@ class SignupScreen extends StatelessWidget {
             Center(
                 child: Container(
                     padding: const EdgeInsets.only(top: 10, bottom: 10),
-                    child: const CustomElevatedButton(
+                    child: CustomElevatedButton(
                       title: 'Continue',
+                      onPressed: () {
+                        Navigator.push(
+                          context,
+                          MaterialPageRoute(
+                              builder: (context) => const SearchScreen()),
+                        );
+                      },
                     ))),
             const SizedBox(
               height: 20,

@@ -1,7 +1,7 @@
 import 'package:flutter/cupertino.dart';
 
-class ImageWidget extends StatelessWidget {
-  const ImageWidget(
+class CustomImageWidget extends StatelessWidget {
+  const CustomImageWidget(
       {super.key,
       this.path = "assets/images/imageInit.png",
       this.width = 50,

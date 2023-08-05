@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:yum/views/login_screen.dart';
 
-import 'package:yum/widget/button_widget.dart';
+import 'package:yum/widget/button/button_widget.dart';
 import 'package:yum/widget/text_widget.dart';
 import '../widget/image_widget.dart';
 
@@ -17,7 +17,7 @@ class InitScreen extends StatelessWidget {
             children: [
               const Expanded(
                   flex: 2,
-                  child: ImageWidget(
+                  child: CustomImageWidget(
                     path: 'assets/images/imageInit.jpg',
                   )),
               Expanded(

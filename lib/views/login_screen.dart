@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
+import 'package:yum/views/search_screen.dart';
 import 'package:yum/views/signup_screen.dart';
-import 'package:yum/widget/button_widget.dart';
+import 'package:yum/widget/button/button_widget.dart';
 import 'package:yum/widget/text_widget.dart';
 import '../widget/formfield_widget.dart';
 
@@ -20,7 +21,7 @@ class LoginScreen extends StatelessWidget {
         backgroundColor: const Color(0xffF8F8F8),
         elevation: 0,
         iconTheme: const IconThemeData(
-          color: Colors.black, //change your color here
+          color: Color(0xff042628), //change your color here
         ),
         title: const TextWidget(
           text: "Login",
@@ -74,18 +75,25 @@ class LoginScreen extends StatelessWidget {
                     ),
                     SizedBox(
                         width: MediaQuery.of(context).size.width,
-                        child: const Column(
+                        child: Column(
                           children: [
-                            SizedBox(
+                            const SizedBox(
                               height: 20,
                             ),
                             CustomElevatedButton(
-                              title: 'Login',
-                            ),
-                            SizedBox(
+                                title: 'Login',
+                                onPressed: () {
+                                  Navigator.push(
+                                    context,
+                                    MaterialPageRoute(
+                                        builder: (context) =>
+                                            const SearchScreen()),
+                                  );
+                                }),
+                            const SizedBox(
                               height: 20,
                             ),
-                            TextWidget(
+                            const TextWidget(
                               text: "Forget password?",
                               weight: FontWeight.w800,
                               size: 15,

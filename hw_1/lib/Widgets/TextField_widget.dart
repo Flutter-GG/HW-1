@@ -21,7 +21,7 @@ class TextFormFieldWidget extends StatefulWidget {
 class _TextFormFieldWidgetState extends State<TextFormFieldWidget> {
   @override
   Widget build(BuildContext context) {
-    return TextFormField(
+    return TextField(
       decoration: InputDecoration(
         border: OutlineInputBorder(
           borderRadius: BorderRadius.circular(15.0),
@@ -34,5 +34,7 @@ class _TextFormFieldWidgetState extends State<TextFormFieldWidget> {
         ),
       ),
     );
+
+    
   }
 }

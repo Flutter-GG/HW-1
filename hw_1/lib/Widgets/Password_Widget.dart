@@ -20,7 +20,7 @@ class _PasswordState extends State<PasswordWidget> {
     return SizedBox(
       width: 100,
       height: 55,
-      child: TextFormField(
+      child: TextField(
         obscureText: isObscureText,
         decoration: InputDecoration(
             border: OutlineInputBorder(

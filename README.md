@@ -3,7 +3,7 @@
 
   first page called in the main is init secean which is designed as shown below:
 
-  <img src="https://github.com/Lama-Aldhafeeri/HW-1/assets/84765301/4f5c4b72-3257-4227-add0-96b7ba86aa44" , height = "150" />
+  <img src="https://github.com/Lama-Aldhafeeri/HW-1/assets/84765301/4f5c4b72-3257-4227-add0-96b7ba86aa44"  height = "150" />
   ![image](https://github.com/Lama-Aldhafeeri/HW-1/assets/84765301/4f5c4b72-3257-4227-add0-96b7ba86aa44)
 
   After clicking on "Get Started" button it will navigate to login page:

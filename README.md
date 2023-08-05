@@ -4,6 +4,8 @@
   
 ## App Screens:
 
+<img width="276" alt="1" src="assets/Screens_for_Readme/Screen1.png">
+
 **This is a landing page**
 ![This is a landing page](assets/Screens_for_Readme/Screen1.png)  
 **This is a page for login**

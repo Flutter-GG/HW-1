@@ -1,7 +1,8 @@
 // ignore_for_file: prefer_const_constructors, prefer_const_literals_to_create_immutables
 
-import 'package:fahd_alsahali_week2_assignment/custom_widget/custom_button.dart';
+import 'package:fahd_alsahali_week2_assignment/custom_widget/custom_buttons/custom_button.dart';
 import 'package:fahd_alsahali_week2_assignment/custom_widget/custom_image.dart';
+import 'package:fahd_alsahali_week2_assignment/screens/pre_authentication/login_screen.dart';
 import 'package:flutter/material.dart';
 
 class WelcomeScreen extends StatelessWidget {
@@ -47,14 +48,23 @@ class WelcomeScreen extends StatelessWidget {
                               "Cooking based on the food recipes you find and the food you love.",
                               textAlign: TextAlign.center,
                               style: TextStyle(
-                                  fontSize: 14, color:Colors.grey.withOpacity(0.8)),
+                                  fontSize: 14,
+                                  color: Colors.grey.withOpacity(0.8)),
                             ),
                           ),
                         ],
                       ),
                       CustomButton(
                         buttonText: "Get Started",
-                        onPressed: () {},
+                        width: MediaQuery.of(context).size.width - 50,
+                        onPressed: () {
+                          Navigator.push(
+                            context,
+                            MaterialPageRoute(
+                              builder: (context) => const LoginScreen(),
+                            ),
+                          );
+                        },
                       )
                     ],
                   ),

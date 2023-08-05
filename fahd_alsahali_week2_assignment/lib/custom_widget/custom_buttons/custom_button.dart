@@ -8,7 +8,12 @@ class CustomButton extends StatelessWidget {
       this.foregroundColor = 0xffFFFFFF,
       this.borderColor = 0xff042628,
       this.onPressed,
-      this.borderSmooth = 10,});
+      this.borderSmooth = 14,
+      required this.width,
+      this.height = 50,
+      this.isTextButton = true,
+      this.icon,
+      });
 
   final String buttonText;
   final int backgroundColor;
@@ -16,6 +21,10 @@ class CustomButton extends StatelessWidget {
   final int borderColor;
   final Function()? onPressed;
   final double borderSmooth;
+  final double width;
+  final double height;
+  final bool isTextButton;
+  final IconData? icon;
 
   @override
   Widget build(BuildContext context) {
@@ -25,11 +34,13 @@ class CustomButton extends StatelessWidget {
           backgroundColor: Color(backgroundColor),
           foregroundColor: Color(foregroundColor),
           side: BorderSide(color: Color(borderColor)),
-          fixedSize: Size(MediaQuery.of(context).size.width - 50, 40),
+          fixedSize: Size(width, height),
           shape: RoundedRectangleBorder(
             borderRadius: BorderRadius.circular(borderSmooth),
           ),
         ),
-        child: Text(buttonText));
+       
+        child: isTextButton?Text(buttonText): Icon(icon),
+        );
   }
 }

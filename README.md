@@ -3,11 +3,11 @@
 
   first page called in the main is init secean which is designed as shown below:
 
-  <img src="https://github.com/Lama-Aldhafeeri/HW-1/assets/84765301/4f5c4b72-3257-4227-add0-96b7ba86aa44"  height = "250" />
+  <img src="https://github.com/Lama-Aldhafeeri/HW-1/assets/84765301/4f5c4b72-3257-4227-add0-96b7ba86aa44"  height = "450" />
   
   After clicking on "Get Started" button it will navigate to login page:
-  
-  ![image](https://github.com/Lama-Aldhafeeri/HW-1/assets/84765301/8296f123-2ee6-4f84-90bc-f8142586a2e4)
+
+  <img src="https://github.com/Lama-Aldhafeeri/HW-1/assets/84765301/8296f123-2ee6-4f84-90bc-f8142586a2e4"  height = "450" />
 
   The user can show/hide the password:
 

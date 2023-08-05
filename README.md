@@ -19,7 +19,7 @@
   <img src="read_me_images/welcome_screen.jpg">
 
   ### Login page
-   <p> This is page where the user is asked to either provide their credentials and login or sign up </p>
+   <p> This is the page where the user is asked to either provide their credentials and login or sign up </p>
    <img src="read_me_images/login_screen.PNG">
 
    ### Sign up page
@@ -34,6 +34,7 @@
         <li>Popualr recipes section (scrollable)</li>
         <li>Editor's choice section (scrollable)</li>
    </ul>
+   <p> This page also have the bottom navigation bar with a floating button as requested in the specification</p>
    <img src="read_me_images/Search_page.PNG">
 
    ### Filter fragment

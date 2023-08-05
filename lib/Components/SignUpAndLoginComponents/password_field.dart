@@ -29,8 +29,8 @@ class PasswordField extends StatelessWidget {
               },
             ),
             border: InputBorder.none,
-            contentPadding: const EdgeInsets.symmetric(vertical: 24.0), // Adjust the vertical padding inside the field
-            hintStyle:  TextStyle(color: Colors.grey.withOpacity(0.7)), // Set the hint text color with opacity
+            contentPadding: const EdgeInsets.symmetric(vertical: 24.0), 
+            hintStyle:  TextStyle(color: Colors.grey.withOpacity(0.7)), 
           ),
           obscureText: !viewModel.isPasswordVisible,
         ),

@@ -6,10 +6,10 @@ import 'package:fahd_alsahali_week2_assignment/custom_widget/custom_cards/editor
 import 'package:fahd_alsahali_week2_assignment/custom_widget/custom_cards/popular_recipes_card.dart';
 import 'package:fahd_alsahali_week2_assignment/custom_widget/custom_headings/custom_lists_heading.dart';
 import 'package:fahd_alsahali_week2_assignment/custom_widget/custom_headings/custom_title.dart';
+import 'package:fahd_alsahali_week2_assignment/fragments/custom_navigattion_bar.dart';
 import 'package:fahd_alsahali_week2_assignment/fragments/search_filter.dart';
 import 'package:flutter/material.dart';
 
-import '../../custom_widget/BottomNavigationPainter.dart';
 
 class SearchScreen extends StatelessWidget {
   const SearchScreen({super.key});
@@ -17,7 +17,12 @@ class SearchScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      
+      floatingActionButtonLocation: FloatingActionButtonLocation.centerDocked,
+      floatingActionButton: FloatingActionButton(
+          onPressed: () {},
+          backgroundColor: Color(0xff042628),
+          child: Icon(Icons.sports_basketball)),
+      bottomNavigationBar: CustomNavigationBar(),
       appBar: AppBar(
         foregroundColor: Colors.black,
         backgroundColor: Colors.white,
@@ -60,7 +65,7 @@ class SearchScreen extends StatelessWidget {
                     borderSmooth: 20,
                     onPressed: () {
                       showModalBottomSheet(
-                        context: context, 
+                        context: context,
                         builder: (context) => SearchFilter(),
                       );
                     },

@@ -28,7 +28,7 @@ class SearchFilter extends StatelessWidget {
           Wrap(
             spacing: 10, 
             runSpacing: 10, 
-            children: [
+            children: const [
               CustomSelectionButton(text: "Breakfast", isSelected: true,),
               CustomSelectionButton(text: "Lunch",),
               CustomSelectionButton(text: "Dinner", textColor: 0xff70B9BE,),
@@ -45,7 +45,7 @@ class SearchFilter extends StatelessWidget {
           Wrap(
             spacing: 10, 
             runSpacing: 10, 
-            children: [
+            children: const [
               CustomSelectionButton(text: "Salad", isSelected: true,),
               CustomSelectionButton(text: "Egg",),
               CustomSelectionButton(text: "Cakes", textColor: 0xff70B9BE,),

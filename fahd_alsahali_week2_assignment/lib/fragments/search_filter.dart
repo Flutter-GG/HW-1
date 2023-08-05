@@ -1,5 +1,3 @@
-// ignore_for_file: prefer_const_constructors
-
 import 'package:fahd_alsahali_week2_assignment/custom_widget/custom_buttons/custom_button.dart';
 import 'package:fahd_alsahali_week2_assignment/custom_widget/custom_buttons/custom_selection_button.dart';
 import 'package:fahd_alsahali_week2_assignment/custom_widget/custom_headings/custom_title.dart';
@@ -15,37 +13,37 @@ class SearchFilter extends StatelessWidget {
       width: MediaQuery.of(context).size.width,
       child: Column(
         children: [
-          CustomTitle(
+          const CustomTitle(
             title: "Filter",
           ),
-          Align(
+          const Align(
             alignment: Alignment.centerLeft,
             child: CustomTitle(
               title: "Category",
               fontSize: 20,
             ),
           ),
-          Wrap(
+          const Wrap(
             spacing: 10, 
             runSpacing: 10, 
-            children: const [
+            children: [
               CustomSelectionButton(text: "Breakfast", isSelected: true,),
               CustomSelectionButton(text: "Lunch",),
               CustomSelectionButton(text: "Dinner", textColor: 0xff70B9BE,),
             ]
           ),
-          SizedBox(height: 30,),
-          Align(
+          const SizedBox(height: 30,),
+          const Align(
             alignment: Alignment.centerLeft,
             child: CustomTitle(
               title: "Recipe Type",
               fontSize: 20,
             ),
           ),
-          Wrap(
+          const Wrap(
             spacing: 10, 
             runSpacing: 10, 
-            children: const [
+            children: [
               CustomSelectionButton(text: "Salad", isSelected: true,),
               CustomSelectionButton(text: "Egg",),
               CustomSelectionButton(text: "Cakes", textColor: 0xff70B9BE,),
@@ -66,7 +64,7 @@ class SearchFilter extends StatelessWidget {
                   borderColor: 0xff70B9BE,
                   buttonText: "Apply Filter",
                 ),
-                SizedBox(height: 10,),
+                const SizedBox(height: 10,),
                 CustomButton(
                   width: MediaQuery.of(context).size.width - 60,
                   onPressed: () {},

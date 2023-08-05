@@ -17,7 +17,7 @@ class CustomSelectionButton extends StatelessWidget {
     return ElevatedButton(
       onPressed: () {},
       style: ElevatedButton.styleFrom(
-        backgroundColor: isSelected? Color(0xff70B9BE): Colors.grey.shade300,
+        backgroundColor: isSelected? const Color(0xff70B9BE): Colors.grey.shade300,
         padding: const EdgeInsets.only(left: 25, right: 25, top: 10, bottom: 10),
         shape: RoundedRectangleBorder(
           borderRadius: BorderRadius.circular(20),

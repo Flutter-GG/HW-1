@@ -1,5 +1,3 @@
-// ignore_for_file: avoid_unnecessary_containers, prefer_const_constructors
-
 import 'package:fahd_alsahali_week2_assignment/custom_widget/custom_buttons/custom_button.dart';
 import 'package:flutter/material.dart';
 
@@ -20,7 +18,7 @@ class EditorChoiceCard extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Padding(
-      padding: EdgeInsets.all(0),
+      padding: const EdgeInsets.all(0),
       child: ClipRRect(
         borderRadius: BorderRadius.circular(25),
         child: Container(
@@ -28,7 +26,7 @@ class EditorChoiceCard extends StatelessWidget {
           height: 130,
           decoration: const BoxDecoration(
           ),
-          padding: EdgeInsets.all(10),
+          padding: const EdgeInsets.all(10),
           child: Row(
             mainAxisAlignment: MainAxisAlignment.start,
             children: [
@@ -44,16 +42,16 @@ class EditorChoiceCard extends StatelessWidget {
                 children: [
                   Container(
                     width: 190,
-                    padding: EdgeInsets.all(10),
+                    padding: const EdgeInsets.all(10),
                     child: Text(
                       title,
                       style:
-                          TextStyle(fontSize: 21, fontWeight: FontWeight.bold),
+                          const TextStyle(fontSize: 21, fontWeight: FontWeight.bold),
                     ),
                   ),
                   Container(
                     width: 185,
-                    padding: EdgeInsets.only(
+                    padding: const EdgeInsets.only(
                       left: 10,
                       right: 10,
                     ),
@@ -69,10 +67,10 @@ class EditorChoiceCard extends StatelessWidget {
                           ),
                         ),
                         Container(
-                          padding: EdgeInsets.only(left: 10),
+                          padding: const EdgeInsets.only(left: 10),
                           child: Text(
                             editorName,
-                            style: TextStyle(
+                            style: const TextStyle(
                               fontSize: 18,
                               overflow: TextOverflow.ellipsis,
                             ),

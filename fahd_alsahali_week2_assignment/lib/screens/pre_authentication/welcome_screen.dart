@@ -1,5 +1,3 @@
-// ignore_for_file: prefer_const_constructors, prefer_const_literals_to_create_immutables
-
 import 'package:fahd_alsahali_week2_assignment/custom_widget/custom_buttons/custom_button.dart';
 import 'package:fahd_alsahali_week2_assignment/custom_widget/custom_image.dart';
 import 'package:fahd_alsahali_week2_assignment/screens/pre_authentication/login_screen.dart';
@@ -11,7 +9,7 @@ class WelcomeScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Color(0xff70B9BE),
+      backgroundColor: const Color(0xff70B9BE),
       body: SafeArea(
         child: Column(
           children: [
@@ -22,7 +20,7 @@ class WelcomeScreen extends StatelessWidget {
             ),
             Expanded(
               child: ClipRRect(
-                borderRadius: BorderRadius.only(
+                borderRadius: const BorderRadius.only(
                   topLeft: Radius.circular(20),
                   topRight: Radius.circular(20),
                 ),
@@ -34,12 +32,12 @@ class WelcomeScreen extends StatelessWidget {
                     children: [
                       Column(
                         children: [
-                          Text(
+                          const Text(
                             "Let's cooking",
                             style: TextStyle(
                                 fontSize: 30, fontWeight: FontWeight.bold),
                           ),
-                          SizedBox(
+                          const SizedBox(
                             height: 8,
                           ),
                           SizedBox(

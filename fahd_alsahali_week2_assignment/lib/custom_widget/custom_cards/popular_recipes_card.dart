@@ -13,7 +13,7 @@ class PopularRecipesCard extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Padding(
-      padding: EdgeInsets.all(10),
+      padding: const EdgeInsets.all(10),
       child: ClipRRect(
         borderRadius: BorderRadius.circular(25),
         child: Container(
@@ -35,7 +35,7 @@ class PopularRecipesCard extends StatelessWidget {
                 ),
               ),
               Padding(
-                padding: EdgeInsets.all(10),
+                padding: const EdgeInsets.all(10),
                 child: Text(
                   recipeName,
                   style: const TextStyle(

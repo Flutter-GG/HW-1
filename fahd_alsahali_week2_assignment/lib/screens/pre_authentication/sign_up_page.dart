@@ -1,5 +1,3 @@
-// ignore_for_file: prefer_const_constructors
-
 import 'package:fahd_alsahali_week2_assignment/custom_widget/custom_buttons/custom_button.dart';
 import 'package:fahd_alsahali_week2_assignment/custom_widget/custom_text_field.dart';
 import 'package:fahd_alsahali_week2_assignment/custom_widget/custom_headings/custom_title.dart';
@@ -32,7 +30,7 @@ class SignUpPage extends StatelessWidget {
                 width: MediaQuery.of(context).size.width - 60,
                 icon: Icons.person,
               ),
-              SizedBox(height: 25),
+              const SizedBox(height: 25),
               Row(
                 mainAxisAlignment: MainAxisAlignment.center,
                 children: [
@@ -42,7 +40,7 @@ class SignUpPage extends StatelessWidget {
                     width: (MediaQuery.of(context).size.width - 60) / 2 - 13,
                     icon: Icons.person,
                   ),
-                  SizedBox(width: 26),
+                  const SizedBox(width: 26),
                   CustomTextField(
                     title: "Last Name",
                     hint: "Last Name",
@@ -51,21 +49,21 @@ class SignUpPage extends StatelessWidget {
                   ),
                 ],
               ),
-              SizedBox(height: 25),
+              const SizedBox(height: 25),
               CustomTextField(
                 title: "Email Address",
                 hint: "Enter Email Address",
                 width: MediaQuery.of(context).size.width - 60,
                 icon: Icons.email,
               ),
-              SizedBox(height: 25),
+              const SizedBox(height: 25),
               CustomTextField(
                 title: "Password",
                 hint: "Enter Password",
                 width: MediaQuery.of(context).size.width - 60,
                 icon: Icons.password,
               ),
-              SizedBox(height: 25),
+              const SizedBox(height: 25),
               CustomButton(
                 width: MediaQuery.of(context).size.width - 50,
                 buttonText: "Continue",
@@ -78,14 +76,14 @@ class SignUpPage extends StatelessWidget {
                   );
                 },
               ),
-              SizedBox(height: 25),
+              const SizedBox(height: 25),
               SizedBox(
                 width: MediaQuery.of(context).size.width-140,
                 child: RichText(
                   textAlign: TextAlign.center,
-                  text:TextSpan(
+                  text:const TextSpan(
                   style: TextStyle(color: Colors.black, fontSize: 16),
-                  children: const [
+                  children: [
                     TextSpan(text: "By continuing, you agree to the "),
                     TextSpan(text: "Terms of Services", style: TextStyle(fontWeight: FontWeight.bold)),
                     TextSpan(text: " & "),

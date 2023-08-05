@@ -46,7 +46,7 @@
 		</data>
 		<key>Frameworks/App.framework/App</key>
 		<data>
-		3jBtnlrfKLvbWCvo0g1yz4GVhjY=
+		aVm+NaFv+YJQBtj6P0TtlT9cF8k=
 		</data>
 		<key>Frameworks/App.framework/Info.plist</key>
 		<data>
@@ -54,15 +54,15 @@
 		</data>
 		<key>Frameworks/App.framework/_CodeSignature/CodeResources</key>
 		<data>
-		eTAqGut0M+3EWNc9FZ5LwsMwsmg=
+		OdyVbqetzx5Qil0GzAh61lEtsis=
 		</data>
 		<key>Frameworks/App.framework/flutter_assets/AssetManifest.bin</key>
 		<data>
-		ItDssUXLKqEKNyCaSkyyomt1SjM=
+		fub2DWG+zJWFERWETmkfWG9b8PY=
 		</data>
 		<key>Frameworks/App.framework/flutter_assets/AssetManifest.json</key>
 		<data>
-		F+xdlNZj2loe1N/ezya8WD87UdI=
+		e3lbF2BAnixKLKJ9aSVuYfKmFto=
 		</data>
 		<key>Frameworks/App.framework/flutter_assets/FontManifest.json</key>
 		<data>
@@ -70,7 +70,7 @@
 		</data>
 		<key>Frameworks/App.framework/flutter_assets/NOTICES.Z</key>
 		<data>
-		VB8Dttzwsjh2PlaYIOq39lCtM9o=
+		KZNG1FTbkNSotLLV6NcccVbtnfo=
 		</data>
 		<key>Frameworks/App.framework/flutter_assets/assets/images/FryingPan.jpeg</key>
 		<data>
@@ -86,7 +86,7 @@
 		</data>
 		<key>Frameworks/App.framework/flutter_assets/kernel_blob.bin</key>
 		<data>
-		6W2l5Ivti4RArdsQ2bZ/QtfrUYE=
+		Fw+HQYLwZpu2BjXRTojA2gDQ21s=
 		</data>
 		<key>Frameworks/App.framework/flutter_assets/packages/cupertino_icons/assets/CupertinoIcons.ttf</key>
 		<data>
@@ -269,7 +269,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			gjCcs8DRJ5yroXRl0P7pyjwZSmTmMyui+xicxUp4OUA=
+			vka4m3QTStdvlGkBEgpJqeVIWN4cZenWEJTgCgih4lU=
 			</data>
 		</dict>
 		<key>Frameworks/App.framework/Info.plist</key>
@@ -283,21 +283,21 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			+B2z7Mr0LzOuK4nOSfyvtM3asiQ68S+QnIU0TsjZ0iY=
+			RbazLlA3ioCCEaMvbdJCgfOniAEHBRmWO0MWA3QZB/8=
 			</data>
 		</dict>
 		<key>Frameworks/App.framework/flutter_assets/AssetManifest.bin</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			7+jOoTFvCiuOYagx+Iih4tqhd2XoQ7Ibz1L2N/+rzJA=
+			VceVH+FILB43MyLzbsucZzUjXeoSsWZwj15hbs4au4Q=
 			</data>
 		</dict>
 		<key>Frameworks/App.framework/flutter_assets/AssetManifest.json</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			YEjkfZrZUz/reF49821ZF0jufEnJlJ3N92sGvvBQMPM=
+			mbEhB/z0uK6ZagD5G7Df/X4DLMkJ6ZdlpfwO48i300g=
 			</data>
 		</dict>
 		<key>Frameworks/App.framework/flutter_assets/FontManifest.json</key>
@@ -311,7 +311,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			4PYeqQdNPbZ/ev3bV41pKJqkRybMiZfqKtOtxp7xBX4=
+			AyAPXTkyWTadScYk02b0xiYjaYx0CkTIY1TuXAvrm7U=
 			</data>
 		</dict>
 		<key>Frameworks/App.framework/flutter_assets/assets/images/FryingPan.jpeg</key>
@@ -339,7 +339,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			S+3Y5NC2HJqoXULRQU4ArmWJH9TJEI1P2iWTyfdnvzw=
+			CG6yDKp0vozrKWq0le+yFVyr1qS6gfVygk9erXGgOtI=
 			</data>
 		</dict>
 		<key>Frameworks/App.framework/flutter_assets/packages/cupertino_icons/assets/CupertinoIcons.ttf</key>

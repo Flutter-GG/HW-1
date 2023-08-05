@@ -1,7 +1,7 @@
 
 import 'package:flutter/material.dart';
-import '../Components/bottom_sheet_section.dart';
-import '../Components/image_section.dart';
+import '../Components/WelcomeViewComponents/bottom_sheet_section.dart';
+import '../Components/WelcomeViewComponents/image_section.dart';
 import '../ViewModels/welcome_viewmodel.dart';
 
 class WelcomeView extends StatefulWidget {

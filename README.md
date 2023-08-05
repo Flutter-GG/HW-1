@@ -1,7 +1,9 @@
-# HW-1
-## Details:
-1. Implement this design in an app using Flutter.
-2. You must utilize the following widgets:
+# Cooking Application Helper
+
+
+## General details
+1. The designs requested were Implemented.
+2. The following are some of the widgets that were used:
    - Image
    - AppBar
    - TextField
@@ -9,34 +11,29 @@
    - Column
    - Icon
    - Button
-   - ListView or other related widgets
-3. Provide navigation between the pages.
+   - SingleChildScrollView
+3. The application provides navigation between pages.
   
+  ## Pages:
+  ### Welcom page
+  <p> This is the initial page the user faces when fisrt opening the application. </p>
+  <img src="read_me_images/welcome_screen.jpg">
 
-<img width="276" alt="1" src="https://github.com/Flutter-GG/HW-1/assets/132256369/6da9c6a1-a639-487c-a296-a8edc545d151">
-<img width="276" alt="2" src="https://github.com/Flutter-GG/HW-1/assets/132256369/bd7fc565-f1a0-4cde-919b-78636d4964b7">
-<img width="276" alt="3" src="https://github.com/Flutter-GG/HW-1/assets/132256369/7c9382c4-3657-4083-aa02-ef867d4a12e8">
-<img width="276" alt="4" src="https://github.com/Flutter-GG/HW-1/assets/132256369/cbc28a9d-e727-4fba-ac5d-26894b384b94">
-<img width="276" alt="5" src="https://github.com/Flutter-GG/HW-1/assets/132256369/5ef2f17c-02b7-49d2-a4ee-161de709d218">
+  ## Login page
+   <p> This is page where the user is asked to either provide their credentials and login or sign up </p>
+   <img src="read_me_images/login_screen.PNG">
 
-## Delivery Requirements:
-1. **Project Structure:** Create a new Flutter project and organize its structure appropriately. Set up the necessary folders, files, and ensure a clean and organized project layout.
-2. **Clean Code**: Write clear and well-organized code. Use meaningful variable and function names, Well-structured and easily maintainable code.
+   ## Sign up page
+   <p> In this page the user is requested to input some information in order to create a new account/ sign up</p>
+   <img src="read_me_images/sign_up_screen.PNG">
 
-## Bonus:
-1. The filter button displays a collection of buttons that can be selected and unselected.
-2. In password TextField, implement the functionality to show/hide the password using an eye icon.
+   ## Search screen
+   <p> This is the search page, where the user can explor recipes through couple of ways inculding:</p>
+   <ul>
+        <li>Search bar </li>
+        <li>Filter</li>
+        <li>Popualr recipes section</li>
+        <li>Editor's choice section</li>
+   </ul>
+   <img src="read_me_images/Search_page.PNG">
 
-## Submission:
-1. Flutter Project:
-   - Submit the complete Flutter project folder, including all necessary files (screens and components).
-2. Screenshots of your app.
-3. GitHub Submission:
-   - Create a Fork from the project’s GitHub repository.
-   - Create a new branch with your name.
-   - Commit frequently with descriptive messages to show your progress.
-   - Finally, create a Pull Request to the project’s original repository.
-
-
-## Deadline: 
-06/08/2023  9:59 AM

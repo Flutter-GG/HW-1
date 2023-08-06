@@ -1,8 +1,0 @@
-version: "Apple Swift version 5.8.1 (swiftlang-5.8.0.124.5 clang-1403.0.22.11.100)"
-options: "52c79d0e812109fb2edc4d8b7da400843e2300bdb3a33f9559691e64e9cb75d6"
-build_start_time: [1691241869, 341308000]
-build_end_time: [1691241869, 376396000]
-inputs:
-  "/Users/lemon.labours/Desktop/FlutterBootcamp/Projects/HW-1/macos/Flutter/GeneratedPluginRegistrant.swift": !private [1691241860, 980547373]
-  "/Users/lemon.labours/Desktop/FlutterBootcamp/Projects/HW-1/macos/Runner/AppDelegate.swift": !private [1666216637, 0]
-  "/Users/lemon.labours/Desktop/FlutterBootcamp/Projects/HW-1/macos/Runner/MainFlutterWindow.swift": !private [1690112781, 95861918]

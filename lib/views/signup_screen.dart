@@ -126,9 +126,9 @@ class SignupScreen extends StatelessWidget {
                   padding: const EdgeInsets.only(top: 10, bottom: 10),
                   width: MediaQuery.of(context).size.width - 50,
                   child: const CustomTextFormField(
-                    hintText: "Enter email address",
-                    icon: Icons.email_outlined,
-                  )),
+                      obscureText: true,
+                      hintText: "Enter password",
+                      icon: Icons.lock_clock_outlined)),
             ),
             Center(
                 child: Container(

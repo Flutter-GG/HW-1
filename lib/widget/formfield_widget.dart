@@ -8,6 +8,7 @@ class CustomTextFormField extends StatelessWidget {
     this.iconColor,
     required this.icon,
     this.isPassword = false,
+    this.obscureText = false,
   });
 
   final Color? hintColor;
@@ -15,10 +16,12 @@ class CustomTextFormField extends StatelessWidget {
   final Color? iconColor;
   final IconData icon;
   final bool isPassword;
+  final bool obscureText;
 
   @override
   Widget build(BuildContext context) {
     return TextFormField(
+        obscureText: obscureText,
         decoration: InputDecoration(
             hintText: hintText,
             hintStyle: TextStyle(color: hintColor),

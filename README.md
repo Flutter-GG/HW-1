@@ -8,10 +8,15 @@ Recipe Finder is a mobile application designed to help users discover and explor
 
 ## Screenshots
 
-![welcome](assets/images/Simulator Screenshot - iPhone 14 Pro Max - 2023-08-06 at 09.14.31.png)
-![login](assets/images/Simulator Screenshot - iPhone 14 Pro Max - 2023-08-06 at 09.14.42.png)
-![signup](assets/images/Simulator Screenshot - iPhone 14 Pro Max - 2023-08-06 at 09.14.47.png)
-![home](assets/images/Simulator Screenshot - iPhone 14 Pro Max - 2023-08-06 at 09.14.55.png)
-![filter](assets/images/Simulator Screenshot - iPhone 14 Pro Max - 2023-08-06 at 09.15.02.png)
+## Screenshots
+![alt text](assets/images/welcome.png)
+
+![alt text](assets/images/login.png)
+
+![alt text](assets/images/sign.png)
+
+![alt text](assets/images/home.png)
+
+![alt text](assets/images/filter.png)
 
 

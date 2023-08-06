@@ -244,27 +244,32 @@ class SearchScreen extends StatelessWidget {
           ],
         ),
       )),
-      bottomNavigationBar: const BottomAppBar(
-        shape: CircularNotchedRectangle(),
+      bottomNavigationBar: BottomAppBar(
+        shape: const CircularNotchedRectangle(),
         child: Row(
           mainAxisAlignment: MainAxisAlignment.spaceBetween,
           children: [
-            IconButton(
+            const IconButton(
               icon: Icon(Icons.home),
               color: Colors.grey,
               onPressed: null,
             ),
             IconButton(
-              icon: Icon(Icons.search),
-              color: Color(0xff70b9be),
-              onPressed: null,
+              icon: const Icon(Icons.search),
+              color: const Color(0xff70b9be),
+              onPressed: () {
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(builder: (context) => const SearchScreen()),
+                );
+              },
             ),
-            IconButton(
+            const IconButton(
               icon: Icon(Icons.notification_add),
               color: Colors.grey,
               onPressed: null,
             ),
-            IconButton(
+            const IconButton(
               icon: Icon(Icons.account_box_outlined),
               color: Colors.grey,
               onPressed: null,

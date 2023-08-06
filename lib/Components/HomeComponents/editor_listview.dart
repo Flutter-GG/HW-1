@@ -9,26 +9,26 @@ class RecipeListView extends StatelessWidget {
         RecipeCard(
           recipeTitle: 'Rice',
           authorName: 'Jane Smith',
-          imageUrl: 'assets/images/rice.jpg', 
-          authorImageUrl: 'assets/images/oatmeal.jpg', 
+          imageUrl: 'assets/images/burgers.jpg', 
+          authorImageUrl: 'assets/images/person1.jpg', 
         ),
         RecipeCard(
           recipeTitle: 'Rice',
           authorName: 'Jane Smith',
-          imageUrl: 'assets/images/rice.jpg', 
-          authorImageUrl: 'assets/images/oatmeal.jpg', 
+          imageUrl: 'assets/images/eggs.jpg', 
+          authorImageUrl: 'assets/images/person2.jpg', 
         ),
             RecipeCard(
           recipeTitle: 'Rice',
           authorName: 'Jane Smith',
           imageUrl: 'assets/images/rice.jpg',
-          authorImageUrl: 'assets/images/oatmeal.jpg', 
+          authorImageUrl: 'assets/images/person1.jpg', 
         ),
                 RecipeCard(
           recipeTitle: 'Rice',
           authorName: 'Jane Smith',
           imageUrl: 'assets/images/rice.jpg', 
-          authorImageUrl: 'assets/images/oatmeal.jpg', 
+          authorImageUrl: 'assets/images/person1.jpg', 
         ),
       ],
     );

@@ -18,5 +18,3 @@ Recipe Finder is a mobile application designed to help users discover and explor
 ![alt text](assets/images/home.png)
 
 ![alt text](assets/images/filter.png)
-
-

@@ -4,45 +4,46 @@ class FilterBottomSheet extends StatefulWidget {
   const FilterBottomSheet({Key? key}) : super(key: key);
 
   @override
-  // ignore: library_private_types_in_public_api
   _FilterBottomSheetState createState() => _FilterBottomSheetState();
 }
 
 class _FilterBottomSheetState extends State<FilterBottomSheet> {
+  List<String> selectedOptions = []; // To keep track of selected filter options
+
   @override
   Widget build(BuildContext context) {
     return Container(
-      color: Colors.transparent, // We use a transparent container to make the content visible in the bottom sheet
+      color: Colors.transparent,
       child: Padding(
         padding: const EdgeInsets.all(16.0),
-        child: Column(
-          mainAxisSize: MainAxisSize.min,
-          crossAxisAlignment: CrossAxisAlignment.stretch,
-          children: [
-            const Center(
-              child: Text(
-                'Filter',
-                style: TextStyle(
-                  fontSize: 24,
-                  fontWeight: FontWeight.bold,
+        child: SingleChildScrollView(
+          child: Column(
+            mainAxisSize: MainAxisSize.min,
+            crossAxisAlignment: CrossAxisAlignment.stretch,
+            children: [
+              const Center(
+                child: Text(
+                  'Filter',
+                  style: TextStyle(
+                    fontSize: 24,
+                    fontWeight: FontWeight.bold,
+                  ),
                 ),
               ),
-            ),
-            SizedBox(height: 24),
-            _buildFilterCategory('Category', ['Breakfast', 'Lunch', 'Dinner']),
-            const SizedBox(height: 24),
-            _buildFilterCategory('Recipe Type', ['Salad', 'Egg', 'CAKES', 'Chicken', 'Meals', 'Vegetables']),
-            SizedBox(height: 24),
-            _buildFilterButtons('Apply Filters', Colors.teal, () {
-              // Add logic for applying filters
-              Navigator.pop(context);
-            }),
-            SizedBox(height: 12),
-            _buildFilterButtons('Clear Filters', Colors.white, () {
-              // Add logic for clearing filters
-              Navigator.pop(context);
-            }),
-          ],
+              const SizedBox(height: 24),
+              _buildFilterCategory('Category', ['Breakfast', 'Lunch', 'Dinner']),
+              const SizedBox(height: 24),
+              _buildFilterCategory('Recipe Type', ['Salad', 'Egg', 'CAKES', 'Chicken', 'Meals', 'Vegetables']),
+              const SizedBox(height: 24),
+              _buildFilterButtons('Apply Filters', Colors.teal, () {
+                Navigator.pop(context);
+              }),
+              const SizedBox(height: 12),
+              _buildFilterButtons('Clear Filters', Colors.white, () {
+                Navigator.pop(context);
+              }),
+            ],
+          ),
         ),
       ),
     );
@@ -54,13 +55,14 @@ class _FilterBottomSheetState extends State<FilterBottomSheet> {
       children: [
         Text(
           title,
-          style: TextStyle(
+          style: const TextStyle(
             fontSize: 20,
             fontWeight: FontWeight.bold,
           ),
         ),
-        SizedBox(height: 12),
+        const SizedBox(height: 12),
         Wrap(
+          alignment: WrapAlignment.center, // Center the filter options
           spacing: 8,
           runSpacing: 8,
           children: options
@@ -74,19 +76,28 @@ class _FilterBottomSheetState extends State<FilterBottomSheet> {
   }
 
   Widget _buildFilterOption(String option) {
+    bool isSelected = selectedOptions.contains(option); // Check if the option is selected
+
     return ElevatedButton(
       onPressed: () {
-        // Add logic for handling filter option selection
+        setState(() {
+          if (isSelected) {
+            selectedOptions.remove(option);
+          } else {
+            selectedOptions.add(option);
+          }
+        });
       },
       style: ElevatedButton.styleFrom(
-        primary: Colors.grey,
+        primary: isSelected ? Colors.teal : Colors.grey[300], // Change color based on selection
         shape: RoundedRectangleBorder(
           borderRadius: BorderRadius.circular(12),
         ),
+        fixedSize: Size(120, 50), // Increase size for all filter buttons
       ),
       child: Text(
         option,
-        style: TextStyle(
+        style: const TextStyle(
           color: Colors.black,
         ),
       ),
@@ -104,7 +115,7 @@ class _FilterBottomSheetState extends State<FilterBottomSheet> {
       ),
       child: Text(
         label,
-        style: TextStyle(
+        style: const TextStyle(
           color: Colors.black,
         ),
       ),

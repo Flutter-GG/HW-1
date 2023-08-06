@@ -39,14 +39,14 @@ class RecipeCard extends StatelessWidget {
   final String recipeTitle;
   final String authorName;
   final String imageUrl;
-  final String authorImageUrl; // Added this for the local author image
+  final String authorImageUrl; 
 
   const RecipeCard({
     Key? key, 
     required this.recipeTitle,
     required this.authorName,
     required this.imageUrl,
-    required this.authorImageUrl, // Initialize the local author image URL
+    required this.authorImageUrl, 
   }) : super(key: key);
 
   @override
@@ -60,7 +60,7 @@ class RecipeCard extends StatelessWidget {
             ClipRRect(
               borderRadius: BorderRadius.circular(8),
               child: Image.asset(
-                imageUrl,  // Using the asset image for the recipe
+                imageUrl,  
                 width: 120,
                 height: 120,
                 fit: BoxFit.cover,
@@ -83,7 +83,7 @@ class RecipeCard extends StatelessWidget {
                     children: [
                       CircleAvatar(
                         backgroundImage: AssetImage(
-                          authorImageUrl,  // Using the asset image for the author
+                          authorImageUrl,  
                         ),
                         radius: 16,
                       ),

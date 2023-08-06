@@ -6,12 +6,12 @@ Recipe Finder is a mobile application designed to help users discover and explor
 
 
 ## Screenshots
-![alt text](assets/images/welcome.png)
+<img src="assets/images/welcome.png" alt="alt text" width="300"/>
 
-![alt text](assets/images/login.png)
+<img src="assets/images/login.png" alt="alt text" width="300"/>
 
-![alt text](assets/images/sign.png)
+<img src="assets/images/sign.png" alt="alt text" width="300"/>
 
-![alt text](assets/images/home.png)
+<img src="assets/images/home.png" alt="alt text" width="300"/>
 
-![alt text](assets/images/filter.png)
+<img src="assets/images/filter.png" alt="alt text" width="300"/>
